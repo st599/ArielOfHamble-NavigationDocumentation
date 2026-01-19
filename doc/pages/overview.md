@@ -4,6 +4,8 @@
 
 This is an overview of the software and hardware used for Ariel of Hamble's Navigation.
 
+> NOTE: Please be aware that some information is measured, some is calculated from those measurements.  For example, Apparent Wind Speed (AWS) is measured and True Wind Speed (TWS) is calculated from AWS and Speed Through the Water (STW)
+
 ## TackTicks
 
 ### Depth
@@ -32,9 +34,12 @@ This is an overview of the software and hardware used for Ariel of Hamble's Navi
 
 ### Dashboard
 
-### Custom Software
+## Custom Software
 
-####
-### Dashboard
-###
-###
+### Engine Hours
+
+### Offsite Notifier
+
+#### Location
+
+#### Sunset
