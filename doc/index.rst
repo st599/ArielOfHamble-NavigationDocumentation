@@ -10,4 +10,4 @@ Ariel of Hamble Navigation Documentation
    :maxdepth: 2
    :caption: Contents:
 
-   overview.md
+   pages/overview.md
