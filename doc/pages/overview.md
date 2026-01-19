@@ -98,3 +98,5 @@ The engine hours meter works by sampling the voltage output from the alternator.
 ### Shutdown Information
 
 ### Better Engine Information
+
+### Better Battery Information
