@@ -6,13 +6,7 @@
 Ariel of Hamble Navigation Documentation
 ========================================
 
-.. image::
-   assets/images/bbcyc_logo.png
-   :height: 200px
-   :width: 200 px
-   :loading: embed
-   :alt: BBCYC Logo
-   :align: center
+Please note - IP addresses and passwords are not present in this document as it is available on the public Internet.
 
 .. toctree::
    :maxdepth: 2
