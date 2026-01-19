@@ -68,7 +68,11 @@ Further details on SignalK can be found at [SignalK Website](https://signalk.org
 
 #### O-Charts
 
-O-charts use the latest information from a number of European hydrographic offices to create chart packages specifically designed for the 
+[O-charts](https://www.o-charts.org/) use the latest information from a number of European hydrographic offices to create chart packages specifically designed for OpenCPN.  Each purchase is licensed to a USB key that is plugged in to the Raspberry Pi. 
+
+
+
+> NOTE: without the USB key, the charts will not be displayed.
 
 ### Dashboard
 
