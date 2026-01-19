@@ -44,11 +44,15 @@ The EmTrak also sends:
 * Aids to Navigation ("Virtual Buoys")
 * Safety Messages (MOB devices, SARTs etc.)
 
+## Standard Horizon VHF
+
 ## Open Plotter
 
-### Safe Switch Off
+
 
 ### RaspberryPi
+
+#### Safe Switch Off
 
 ### SignalK
 
@@ -74,6 +78,8 @@ Further details on SignalK can be found at [SignalK Website](https://signalk.org
 
 > NOTE: without the USB key, the charts will not be displayed.
 
+#### MOB and Safety Notifications
+
 ### Dashboard
 
 ## Custom Software
@@ -85,7 +91,6 @@ Our custom software uses a number of tools that are built in to the Raspberry Pi
 The engine hours meter works by sampling the voltage output from the alternator.  If a voltage is present, the alternator and engine are running.  The total hours value is stored in a text file.  Every 3 mins the software checks for the presence of voltage and if present, increments the time stored in the file and sends to new value to the SignalK database.
 
 ### Offsite Notifier
-
 
 #### Location
 
