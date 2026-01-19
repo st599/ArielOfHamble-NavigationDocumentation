@@ -17,7 +17,7 @@ release = '0.1'
 
 extensions = ['myst_parser']
 
-templates_path = ['_templates']
+templates_path = ['_templates', 'sphinx.ext.mathjax']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 
