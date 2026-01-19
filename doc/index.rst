@@ -17,4 +17,6 @@ Please note - IP addresses and passwords are not present in this document as it 
    pages/opencpn_advanced.md
    pages/data_dashboard.md
    pages/other_openplotter_software.md
+   pages/troubleshooting.md
    pages/reporting_fault.md
+   pages/technology_deepdive.md
