@@ -14,9 +14,31 @@ This is an overview of the software and hardware used for Ariel of Hamble's Navi
 
 ## EmTrak AIS
 
+The EmTrak AIS is a multipurpose device.  It is the vessel's source of location data, it is an AIS class B+ transceiver, sending the boat's location to other vessels and, when in range, shore stations, it decodes the locations of other vessels and it has an inbuilt switch that switches the internal AIS and the VHF to the mast-head antenna.
+
+To prevent the VHF being powered on and transmitting in to a switched off AIS unit, both the EmTrak and VHF are on the same power switch "VHF"  Please switch on the VHF, wait until it acquires a position and displays it on the VHF front panel and then switch on the "Navigation" switch.
+
 ### GPS Information
 
+The EmTrak sends the following GNSS information to the Navigation system:
+* Location
+* COG and SOG
+* Rate of Turn
+* Time
+* Number of Satellites
+* Precision
+
+> NOTE: The EmTrak unit uses the US GPS, EU Galileo, Russian Glonass and Chinese Beidou locations satellites.
+
 ### AIS Targets
+
+The EmTrak also sends:
+* Class A Vessel Location
+* Class B Vessel Location
+* Class A Vessel Type, Cargo, Destinations etc.
+* Search and Rescue Aircraft
+* Aids to Navigation ("Virtual Buoys")
+* Safety Messages (MOB devices, SARTs etc.)
 
 ## Open Plotter
 
