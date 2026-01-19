@@ -12,6 +12,8 @@ This is an overview of the software and hardware used for Ariel of Hamble's Navi
 
 ### Wind Speed and Direction
 
+The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called [Raymarine Micronet](https://open-boat-projects.org/en/micronet/).  The unit in the navigation locker then converts the proprietary data to standard NMEA 0143.
+
 ## EmTrak AIS
 
 The EmTrak AIS is a multipurpose device.  It is the vessel's source of location data, it is an AIS class B+ transceiver, sending the boat's location to other vessels and, when in range, shore stations, it receives the locations of other vessels and it has an inbuilt switch connecting both the internal AIS and the VHF to the mast-head antenna.
@@ -51,7 +53,9 @@ The EmTrak also sends:
 SignalK is software designed to import data from a variety of sources around the boat and stores it in a central database which can be accessed by other software.  On Ariel, the SignalK servier takes data from a range of inputs such as the NMEA 0143 bus used by the TackTicks and EmTrak, from the barometer and thermometer in the navigation locker and software modules running on the Raspberry Pi and imports them in to the database.  SignalK also stores a range of static data in this database which can be used in calculations, e.g. vessel draught.
 
 SignalK stores data addresses and values, for example:
+
 `/vessels/<mmsi>/environment/windSpeedTrue 4.23`
+
 `/vessels/<mmsi>/navigation/position 51.23453,-0.12248,2.34`
 
 This database is available to other software to read from - the plotter software, OpenCPN, receives all of its locations details, AIS vessels to overlay, DSC alerts directly from the SignalK database.  SignalK also has a number of output plugins so the data is converted back to NMEA 0143 so derived values can be displayed on the TackTicks, to a data stream that can be used by Navionics or similar on member's phones and tablets and in some cases to files so that trends can be observed (e.g. we're actively monitoring battery state to see if we can understand better what is causing mysterious battery drainage).
@@ -61,6 +65,8 @@ Further details on SignalK can be found at [SignalK Website](https://signalk.org
 ### OpenCPN
 
 #### O-Charts
+
+O-charts use the latest information from a number of European hydrographic offices to create chart packages specifically designed for the 
 
 ### Dashboard
 
@@ -78,3 +84,11 @@ The engine hours meter works by sampling the voltage output from the alternator.
 #### Location
 
 #### Sunset
+
+## Future Projects
+
+### Better Data Dashboard
+
+### Shutdown Information
+
+### Better Engine Information
