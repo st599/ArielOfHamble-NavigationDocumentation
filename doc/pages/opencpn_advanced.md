@@ -1,1 +1,1 @@
-# Advanced Usafe of OpenCPN
+# Advanced Use of OpenCPN
