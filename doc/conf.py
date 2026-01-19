@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Ariel of Hamble Navigation Documentation'
+project = 'Ariel of Hamble Navigation'
 copyright = 'BBCYC 2026'
 author = 'Simon Thompson'
 release = '0.1'
