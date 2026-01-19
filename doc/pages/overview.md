@@ -12,6 +12,8 @@ This is an overview of the software and hardware used for Ariel of Hamble's Navi
 
 ### Wind Speed and Direction
 
+![Micronet](assets/images/Micronet-768x464.png)
+
 The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called [Raymarine Micronet](https://open-boat-projects.org/en/micronet/).  The unit in the navigation locker then converts the proprietary data to standard NMEA 0143.
 
 ## EmTrak AIS
