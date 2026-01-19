@@ -11,3 +11,4 @@ Ariel of Hamble Navigation Documentation
    :caption: Contents:
 
    pages/overview.md
+   pages/reporting_fault.md
