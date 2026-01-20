@@ -78,6 +78,8 @@ Further details on SignalK can be found at [SignalK Website](https://signalk.org
 
 > NOTE: without the USB key, the charts will not be displayed.
 
+Each year we purchase the entire UK chart set plus any required for the summer cruise, e.g. Atlantic France.  If you are planning on sailing anywhere that could require new charts, please contact the Commodore.  Charts can be installed remotely.  Charts receive updates every four weeks - again updates can be run remotely.
+
 #### MOB and Safety Notifications
 
 ### Dashboard
