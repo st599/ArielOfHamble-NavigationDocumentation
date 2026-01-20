@@ -94,15 +94,23 @@ The engine hours meter works by sampling the voltage output from the alternator.
 
 ### Offsite Notifier
 
+The offsite notifier uses a service called [NTFY](ntfy.sh) - sending short notifications from the Raspberry Pi which can be read by the Boatswain's team and committee.  To ensure that Skippers and Mates are aware that a notification is running, a short jingle is played.
+
 #### Location
 
+The location notification checks if the boat is approaching a fixed location and sends a ntfy.sh notification.  This is mainly used on the approach to Elephant Boatyard to know when the boatswain's team can visit the yard to do work. 
+
 #### Sunset
+
+The sunset notification lets us know that the navigation system is running at sunset, so we know that a night sail is taking place.
 
 ## Future Projects
 
 ### Better Data Dashboard
 
 ### Shutdown Information
+
+We are planning to use the offsite notifier to send a set of data when the navigation system is shutdown.  This would be used for information important to planning maintenance and spotting early indications of issues.  In the initial rollout we're hoping to send engine hours, battery status and cabin humidity with a hope to add further information such as fridge minimum temperature, engine maximum temperature, bilge water level etc.
 
 ### Better Engine Information
 
