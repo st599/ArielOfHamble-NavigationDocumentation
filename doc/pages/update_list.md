@@ -1,6 +1,6 @@
 # Update List
 
-| version | description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text | 
+| version | description | date |
+| ----------- | ----------- | ----------- |
+| 0.1 | Automated webpage creation | 21/01/26 |
+
