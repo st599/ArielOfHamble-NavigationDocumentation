@@ -12,6 +12,8 @@ The depth sounder uses ultrasonic waves to measure the depth beneath the transdu
 
 ### Speed
 
+The speed transducer uses a paddle wheel.
+
 ### Wind Speed and Direction
 
 ![Micronet](../assets/images/Micronet-768x464.png)
