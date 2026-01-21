@@ -25,14 +25,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: _build/
           force_orphan: true
-      - name: Build and Commit
-        uses: iSOLveIT/sphinx-pdf-generate-action@main
-        with:
-          config_file_path: docs/conf.py
-          target_branch: 'gh-pages'
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: site
-          publish_dir: pdf/
