@@ -20,3 +20,7 @@ jobs:
         python -m pip install --upgrade pip
         sudo apt install weasyprint
         pip install sphinx sphinx_rtd_theme piccolo-theme myst_parser sphinx-simplepdf 
+    - name: Create PDF
+      run: |
+        cd doc
+        sphinx-build -M simplepdf . _build
