@@ -24,3 +24,7 @@ jobs:
       run: |
         cd doc
         sphinx-build -M simplepdf . pdf_build
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
