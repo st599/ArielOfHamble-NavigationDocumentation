@@ -20,7 +20,7 @@ jobs:
         config_file_path: doc/conf-pdf.py
         documentation_path: doc/
         target_branch: 'gh-pages'
-        sphinx_version: 9.3
+        sphinx_version: 9.1.0
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
