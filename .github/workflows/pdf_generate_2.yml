@@ -23,4 +23,4 @@ jobs:
     - name: Create PDF
       run: |
         cd doc
-        sphinx-build -M simplepdf . _build
+        sphinx-build -M simplepdf . pdf_build
