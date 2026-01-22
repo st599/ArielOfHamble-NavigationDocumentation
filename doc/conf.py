@@ -32,4 +32,5 @@ html_static_path = ['_static']
 # https://sphinx-simplepdf.readthedocs.io/en/latest/configuration.html
 
 simplepdf_file_name = "AoH-Navigation.pdf"
+ simplepdf_debug = True
 
