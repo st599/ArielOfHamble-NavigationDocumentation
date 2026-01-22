@@ -15,7 +15,7 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['myst_parser', 'sphinx.ext.mathjax', 'sphinx.builders.epub3', 'sphinx_pdf_generate']
+extensions = ['myst_parser', 'sphinx.ext.mathjax']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -24,19 +24,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'sphinx_rtd_theme'
-#html_theme = 'piccolo_theme'
+html_theme = 'piccolo_theme'
 
 html_static_path = ['_static']
-
-# -- Options for PDF output -------------------------------------------------
-pdfgen_site_url = "https://bbcyc.wildapricot.org"
-pdfgen_author = "Sphinx-PDF Generate"
-pdfgen_copyright = "2026, BBC Yacht Club"
-pdfgen_disclaimer = "Disclaimer: Content can change at anytime and best to refer to website for latest information."
-pdfgen_cover = True
-pdfgen_cover_title = "Ariel of Hamble Navigation"
-pdfgen_toc = True
-pdfgen_toc_numbering = True
-pdfgen_toc_title = "Contents"
-pdfgen_toc_level = 2
