@@ -18,5 +18,5 @@ jobs:
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
-        apt install weasyprint
+        sudo apt install weasyprint
         pip install sphinx sphinx_rtd_theme piccolo-theme myst_parser sphinx-simplepdf 
