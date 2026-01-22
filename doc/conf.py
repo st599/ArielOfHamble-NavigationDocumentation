@@ -15,7 +15,7 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['myst_parser', 'sphinx.ext.mathjax', 'sphinx.builders.epub3']
+extensions = ['myst_parser', 'sphinx.ext.mathjax', 'sphinx.builders.epub3', 'sphinx_pdf_generate']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
