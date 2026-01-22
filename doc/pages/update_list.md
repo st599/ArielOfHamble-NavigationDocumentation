@@ -8,8 +8,8 @@
 
 ### Version 0.2
 
-Set up creation of PDF using Sphinx SimplePDF
+* Set up creation of PDF using Sphinx SimplePDF
 
 ### Version 0.1
 
-Set up publishing to GitHub pages - online documentation
+* Set up publishing to GitHub pages - online documentation
