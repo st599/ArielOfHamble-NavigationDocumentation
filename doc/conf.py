@@ -27,3 +27,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'piccolo_theme'
 
 html_static_path = ['_static']
+
+# -- Options for PDF output -------------------------------------------------
+# https://sphinx-simplepdf.readthedocs.io/en/latest/configuration.html
+
+simplepdf_file_name = "AoH-Navigation.pdf"
+
