@@ -12,4 +12,4 @@ The configuration is stored in doc/conf.py
 
 Two actions run each time a file is committed:
 1. Generate an HTML site in the style of ReadTheDocs and copy to [here](https://st599.github.io/ArielOfHamble-NavigationDocumentation/index.html)
-2. Generate a PDF file and copy to /doc
+2. Generate a PDF file and copy to /doc/pdf_build/simplepdf/AoH-Navigation.pdf
