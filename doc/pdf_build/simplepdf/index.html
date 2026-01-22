@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+
+<html data-content_root="./" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ariel of Hamble Navigation 0.1 documentation</title>
+<link href="_static/pygments.css?v=d75fae25" rel="stylesheet" type="text/css"/>
+<link href="_static/main.css?v=9187bc91" rel="stylesheet" type="text/css"/>
+<script src="_static/documentation_options.js?v=567ef170"></script>
+<script src="_static/doctools.js?v=fd6eb6e6"></script>
+<script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="search.html" rel="search" title="Search"/>
+</head><body><article class="dont-break" id="cover">
+<div class="container">
+<!-- Logo -->
+<div class="logo">
+<p></p>
+</div>
+<!-- Cover middle -->
+<div class="cover-middle">
+<div class="title">
+<h1 class="title-cover">Ariel of Hamble Navigation</h1>
+<p class="subtitle-cover">Version </p>
+<span class="meta">
+</span>
+</div>
+<!--
+      <div class="client-logo">
+        <img src="../data/logo_.png" alt="Logotipo">
+      </div>
+      -->
+</div>
+<!-- Footer -->
+<div class="cover-footer">
+<p>
+</p>
+</div>
+</div>
+</article>
+<div aria-label="Main" class="sphinxsidebar" role="navigation">
+<div class="sphinxsidebarwrapper">
+<div>
+<h3><a href="#">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/overview">Navigation Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#tackticks">TackTicks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#emtrak-ais">EmTrak AIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#standard-horizon-vhf">Standard Horizon VHF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#open-plotter">Open Plotter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#custom-software">Custom Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#future-projects">Future Projects</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/opencpn_basic">Basic Use of OpenCPN Plotter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#interface-overview">Interface Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#zooming-and-panning">Zooming and Panning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#getting-information-on-chart-item">Getting Information on Chart Item</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/opencpn_advanced">Advanced Use of OpenCPN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/data_dashboard">Data Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/other_openplotter_software">Other OpenPlotter Software</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/other_openplotter_software#xygrib">XyGrib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/other_openplotter_software#vlc">VLC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/other_openplotter_software#screenshot">Screenshot</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/troubleshooting">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/reporting_fault">Reporting a Fault</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/update_list">Update List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/update_list#version-1-0">Version 1.0</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body" role="main">
+<section id="ariel-of-hamble-navigation-documentation">
+<h1>Ariel of Hamble Navigation Documentation<a class="headerlink" href="#ariel-of-hamble-navigation-documentation" title="Link to this heading">¶</a></h1>
+<p>Please note - IP addresses and passwords are not present in this document as it is available on the public Internet.</p>
+<div class="toctree-wrapper compound">
+<span id="document-pages/overview"></span><section id="navigation-overview">
+<h2>Navigation Overview<a class="headerlink" href="#navigation-overview" title="Link to this heading">¶</a></h2>
+<p>This is an overview of the software and hardware used for Ariel of Hamble’s Navigation.</p>
+<blockquote>
+<div><p>NOTE: Please be aware that some information is measured and some is derived from those measurements.  For example, Apparent Wind Speed (AWS) is measured and True Wind Speed (TWS) is calculated from AWS and Speed Through the Water (STW).  A problem with a measured value will cause knock-on issues with values derived from it.</p>
+</div></blockquote>
+<section id="tackticks">
+<h3>TackTicks<a class="headerlink" href="#tackticks" title="Link to this heading">¶</a></h3>
+<section id="depth">
+<h4>Depth<a class="headerlink" href="#depth" title="Link to this heading">¶</a></h4>
+<p>The depth sounder uses ultrasonic waves to measure the depth beneath the transducer.</p>
+</section>
+<section id="speed">
+<h4>Speed<a class="headerlink" href="#speed" title="Link to this heading">¶</a></h4>
+<p>The speed transducer uses a paddle wheel.</p>
+</section>
+<section id="wind-speed-and-direction">
+<h4>Wind Speed and Direction<a class="headerlink" href="#wind-speed-and-direction" title="Link to this heading">¶</a></h4>
+<p><img alt="Micronet" src="_images/Micronet-768x464.png"/></p>
+<p>The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called <a class="reference external" href="https://open-boat-projects.org/en/micronet/">Raymarine Micronet</a>.  The unit in the navigation locker then converts the proprietary data to standard NMEA 0143.</p>
+</section>
+</section>
+<section id="emtrak-ais">
+<h3>EmTrak AIS<a class="headerlink" href="#emtrak-ais" title="Link to this heading">¶</a></h3>
+<p>The EmTrak AIS is a multipurpose device.  It is the vessel’s source of location data, it is an AIS class B+ transceiver, sending the boat’s location to other vessels and, when in range, shore stations, it receives the locations of other vessels and it has an inbuilt switch connecting both the internal AIS and the VHF to the mast-head antenna.</p>
+<p>To prevent the VHF being powered on and transmitting in to a switched off AIS unit, both the EmTrak and VHF are on the same power switch “VHF”.  Please switch on “VHF”, wait until it acquires a position and displays it on the VHF front panel and then switch on the “Navigation” switch.</p>
+<section id="gps-information">
+<h4>GPS Information<a class="headerlink" href="#gps-information" title="Link to this heading">¶</a></h4>
+<p>The EmTrak sends the following GNSS information to the Navigation system:</p>
+<ul class="simple">
+<li><p>Location</p></li>
+<li><p>COG and SOG</p></li>
+<li><p>Rate of Turn</p></li>
+<li><p>Time</p></li>
+<li><p>Number of Satellites</p></li>
+<li><p>Precision</p></li>
+</ul>
+<blockquote>
+<div><p>NOTE: The EmTrak unit uses the US GPS, EU Galileo, Russian Glonass and Chinese Beidou locations satellites.</p>
+</div></blockquote>
+</section>
+<section id="ais-targets">
+<h4>AIS Targets<a class="headerlink" href="#ais-targets" title="Link to this heading">¶</a></h4>
+<p>The EmTrak also sends:</p>
+<ul class="simple">
+<li><p>Class A Vessel Location</p></li>
+<li><p>Class B Vessel Location</p></li>
+<li><p>Class A Vessel Type, Cargo, Destinations etc.</p></li>
+<li><p>Search and Rescue Aircraft</p></li>
+<li><p>Aids to Navigation (“Virtual Buoys”)</p></li>
+<li><p>Safety Messages (MOB devices, SARTs etc.)</p></li>
+</ul>
+</section>
+</section>
+<section id="standard-horizon-vhf">
+<h3>Standard Horizon VHF<a class="headerlink" href="#standard-horizon-vhf" title="Link to this heading">¶</a></h3>
+</section>
+<section id="open-plotter">
+<h3>Open Plotter<a class="headerlink" href="#open-plotter" title="Link to this heading">¶</a></h3>
+<section id="raspberrypi">
+<h4>RaspberryPi<a class="headerlink" href="#raspberrypi" title="Link to this heading">¶</a></h4>
+</section>
+<section id="signalk">
+<h4>SignalK<a class="headerlink" href="#signalk" title="Link to this heading">¶</a></h4>
+<p>SignalK is software designed to import data from a variety of sources around the boat and stores it in a central database which can be accessed by other software.  On Ariel, the SignalK servier takes data from a range of inputs such as the NMEA 0143 bus used by the TackTicks and EmTrak, from the barometer and thermometer in the navigation locker and software modules running on the Raspberry Pi and imports them in to the database.  SignalK also stores a range of static data in this database which can be used in calculations, e.g. vessel draught.</p>
+<p>SignalK stores data addresses and values, for example:</p>
+<p><code class="docutils literal notranslate"><span class="pre">/vessels/&lt;mmsi&gt;/environment/windSpeedTrue</span> <span class="pre">4.23</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">/vessels/&lt;mmsi&gt;/navigation/position</span> <span class="pre">51.23453,-0.12248,2.34</span></code></p>
+<p>This database is available to other software to read from - the plotter software, OpenCPN, receives all of its locations details, AIS vessels to overlay, DSC alerts directly from the SignalK database.  SignalK also has a number of output plugins so the data is converted back to NMEA 0143 so derived values can be displayed on the TackTicks, to a data stream that can be used by Navionics or similar on member’s phones and tablets and in some cases to files so that trends can be observed (e.g. we’re actively monitoring battery state to see if we can understand better what is causing mysterious battery drainage).</p>
+<p>Further details on SignalK can be found at <a class="reference external" href="https://signalk.org/">SignalK Website</a></p>
+</section>
+<section id="opencpn">
+<h4>OpenCPN<a class="headerlink" href="#opencpn" title="Link to this heading">¶</a></h4>
+<section id="o-charts">
+<h5>O-Charts<a class="headerlink" href="#o-charts" title="Link to this heading">¶</a></h5>
+<p><img alt="Micronet" src="_images/ocharts-uk.jpg"/></p>
+<p><a class="reference external" href="https://www.o-charts.org/">O-charts</a> use the latest information from a number of European hydrographic offices to create chart packages specifically designed for OpenCPN.  Each purchase is licensed to a USB key that is plugged in to the Raspberry Pi.</p>
+<blockquote>
+<div><p>NOTE: without the USB key, the charts will not be displayed.</p>
+</div></blockquote>
+<p>Each year we purchase the entire UK chart set plus any required for the summer cruise, e.g. Atlantic France.  If you are planning on sailing anywhere that could require new charts, please contact the Commodore.  Charts can be installed remotely.  Charts receive updates every four weeks - again updates can be run remotely.</p>
+</section>
+<section id="mob-and-safety-notifications">
+<h5>MOB and Safety Notifications<a class="headerlink" href="#mob-and-safety-notifications" title="Link to this heading">¶</a></h5>
+</section>
+</section>
+<section id="dashboard">
+<h4>Dashboard<a class="headerlink" href="#dashboard" title="Link to this heading">¶</a></h4>
+</section>
+</section>
+<section id="custom-software">
+<h3>Custom Software<a class="headerlink" href="#custom-software" title="Link to this heading">¶</a></h3>
+<p>Our custom software uses a number of tools that are built in to the Raspberry Pi’s operating system.  The majority use a service called <code class="docutils literal notranslate"><span class="pre">cron</span></code> which runs a specific programme at a specific time.</p>
+<section id="engine-hours">
+<h4>Engine Hours<a class="headerlink" href="#engine-hours" title="Link to this heading">¶</a></h4>
+<p>The engine hours meter works by sampling the voltage output from the alternator.  If a voltage is present, the alternator and engine are running.  The total hours value is stored in a text file.  Every 3 mins the software checks for the presence of voltage and if present, increments the time stored in the file and sends to new value to the SignalK database.</p>
+</section>
+<section id="offsite-notifier">
+<h4>Offsite Notifier<a class="headerlink" href="#offsite-notifier" title="Link to this heading">¶</a></h4>
+<p>The offsite notifier uses a service called <a class="reference internal" href="#ntfy.sh"><span class="xref myst">NTFY</span></a> - sending short notifications from the Raspberry Pi which can be read by the Boatswain’s team and committee.  To ensure that Skippers and Mates are aware that a notification is running, a short jingle is played.</p>
+<section id="location">
+<h5>Location<a class="headerlink" href="#location" title="Link to this heading">¶</a></h5>
+<p>The location notification checks if the boat is approaching a fixed location and sends a ntfy.sh notification.  This is mainly used on the approach to Elephant Boatyard to know when the boatswain’s team can visit the yard to do work.</p>
+</section>
+<section id="sunset">
+<h5>Sunset<a class="headerlink" href="#sunset" title="Link to this heading">¶</a></h5>
+<p>The sunset notification lets us know that the navigation system is running at sunset, so we know that a night sail is taking place.</p>
+</section>
+</section>
+</section>
+<section id="future-projects">
+<h3>Future Projects<a class="headerlink" href="#future-projects" title="Link to this heading">¶</a></h3>
+<section id="better-data-dashboard">
+<h4>Better Data Dashboard<a class="headerlink" href="#better-data-dashboard" title="Link to this heading">¶</a></h4>
+</section>
+<section id="shutdown-information">
+<h4>Shutdown Information<a class="headerlink" href="#shutdown-information" title="Link to this heading">¶</a></h4>
+<p>We are planning to use the offsite notifier to send a set of data when the navigation system is shutdown.  This would be used for information important to planning maintenance and spotting early indications of issues.  In the initial rollout we’re hoping to send engine hours, battery status and cabin humidity with a hope to add further information such as fridge minimum temperature, engine maximum temperature, bilge water level etc.</p>
+</section>
+<section id="better-engine-information">
+<h4>Better Engine Information<a class="headerlink" href="#better-engine-information" title="Link to this heading">¶</a></h4>
+</section>
+<section id="better-battery-information">
+<h4>Better Battery Information<a class="headerlink" href="#better-battery-information" title="Link to this heading">¶</a></h4>
+</section>
+</section>
+</section>
+<span id="document-pages/opencpn_basic"></span><section id="basic-use-of-opencpn-plotter">
+<h2>Basic Use of OpenCPN Plotter<a class="headerlink" href="#basic-use-of-opencpn-plotter" title="Link to this heading">¶</a></h2>
+<section id="interface-overview">
+<h3>Interface Overview<a class="headerlink" href="#interface-overview" title="Link to this heading">¶</a></h3>
+</section>
+<section id="zooming-and-panning">
+<h3>Zooming and Panning<a class="headerlink" href="#zooming-and-panning" title="Link to this heading">¶</a></h3>
+</section>
+<section id="getting-information-on-chart-item">
+<h3>Getting Information on Chart Item<a class="headerlink" href="#getting-information-on-chart-item" title="Link to this heading">¶</a></h3>
+</section>
+</section>
+<span id="document-pages/opencpn_advanced"></span><section id="advanced-use-of-opencpn">
+<h2>Advanced Use of OpenCPN<a class="headerlink" href="#advanced-use-of-opencpn" title="Link to this heading">¶</a></h2>
+</section>
+<span id="document-pages/data_dashboard"></span><section id="data-dashboard">
+<h2>Data Dashboard<a class="headerlink" href="#data-dashboard" title="Link to this heading">¶</a></h2>
+</section>
+<span id="document-pages/other_openplotter_software"></span><section id="other-openplotter-software">
+<h2>Other OpenPlotter Software<a class="headerlink" href="#other-openplotter-software" title="Link to this heading">¶</a></h2>
+<section id="xygrib">
+<h3>XyGrib<a class="headerlink" href="#xygrib" title="Link to this heading">¶</a></h3>
+</section>
+<section id="vlc">
+<h3>VLC<a class="headerlink" href="#vlc" title="Link to this heading">¶</a></h3>
+</section>
+<section id="screenshot">
+<h3>Screenshot<a class="headerlink" href="#screenshot" title="Link to this heading">¶</a></h3>
+</section>
+</section>
+<span id="document-pages/troubleshooting"></span><section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
+</section>
+<span id="document-pages/reporting_fault"></span><section id="reporting-a-fault">
+<h2>Reporting a Fault<a class="headerlink" href="#reporting-a-fault" title="Link to this heading">¶</a></h2>
+<p>Please send fault reports with the system to the Commodore and the Boatswain.</p>
+<p>In the fault report please include:</p>
+<ul class="simple">
+<li><p>A description of the error including, if possible, what data values are faulty.</p>
+<ul>
+<li><p>For example, Depth is showing “—” on the TackTick display, but is present on the plotter display.  Reports such as speed is wrong, without</p></li>
+</ul>
+</li>
+<li><p>a description of what is happening are difficult to remotely diagnose.</p>
+<ul>
+<li><p>Screenshots, photos, videos etc. are always helpful!</p></li>
+</ul>
+</li>
+<li><p>The date and time that the error occurred.</p></li>
+</ul>
+<p>The Commodore and Boatswain have remote access to the system, so they may ask you to leave it switched on when you’re doing something else.</p>
+<p>test</p>
+</section>
+<span id="document-pages/update_list"></span><section id="update-list">
+<h2>Update List<a class="headerlink" href="#update-list" title="Link to this heading">¶</a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>version</p></th>
+<th class="head"><p>description</p></th>
+<th class="head"><p>date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0.2</p></td>
+<td><p>Automated PDF creation</p></td>
+<td><p>21/01/26</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.1</p></td>
+<td><p>Automated webpage creation</p></td>
+<td><p>21/01/26</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="version-1-0">
+<h2>Version 1.0<a class="headerlink" href="#version-1-0" title="Link to this heading">¶</a></h2>
+</section>
+</div>
+</section>
+<div class="clearer"></div>
+</div>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<h1>
+  SimplePDF Debug output
+</h1>
+<p>
+  This is some build environment specific output.
+  It shall help to identify problems during the build process.
+</p>
+<p>
+  You see this output because <b>simplepdf_debug=True</b> is set on the <b>conf.py</b> file.
+</p>
+<h2>Sphinx</h2>
+<b>Version</b>: 9.1.0 <br/>
+<b>Srcdir</b>: /home/runner/work/ArielOfHamble-NavigationDocumentation/ArielOfHamble-NavigationDocumentation/doc <br/>
+<b>Confdir</b>: /home/runner/work/ArielOfHamble-NavigationDocumentation/ArielOfHamble-NavigationDocumentation/doc <br/>
+<b>Outdir</b>: /home/runner/work/ArielOfHamble-NavigationDocumentation/ArielOfHamble-NavigationDocumentation/doc/pdf_build/simplepdf <br/>
+<h3>Extensions</h3>
+<p>
+Used Sphinx extension can be also found in the packages list of Python, which also includes the used version.
+</p>
+<p>
+  
+    myst_parser<br/>
+  
+    sphinx.ext.mathjax<br/>
+  
+    sphinx_simplepdf<br/>
+</p>
+<h3>SimplePDF Configs</h3>
+<b>simplepdf_vars</b>: {}<br/>
+<b>simplepdf_file_name</b>: AoH-Navigation.pdf<br/>
+<b>simplepdf_debug</b>: True<br/>
+<b>simplepdf_weasyprint_timeout</b>: None<br/>
+<b>simplepdf_weasyprint_retries</b>: 0<br/>
+<b>simplepdf_weasyprint_flags</b>: None<br/>
+<b>simplepdf_weasyprint_filter</b>: []<br/>
+<b>simplepdf_use_weasyprint_api</b>: None<br/>
+<b>simplepdf_theme</b>: simplepdf_theme<br/>
+<b>simplepdf_theme_options</b>: {}<br/>
+<b>simplepdf_sidebars</b>: {'**': ['localtoc.html']}<br/>
+<h2>Python</h2>
+<b>Executable</b>: /opt/hostedtoolcache/Python/3.13.11/x64/bin/python <br/>
+<b>Operating System</b>: Linux (Release: 6.11.0-1018-azure) <br/>
+<h3>Packages</h3>
+<p>
+  This chapter shows a list of installed packages in the current Python environment, which was used to build this
+  PDF. The second value is the version number.
+</p>
+<h4>Important packages</h4>
+<p>
+<b>PIL: unknown</b> <br/>
+<b>sphinx: 9.1.0</b> <br/>
+<b>sphinx_simplepdf: 1.7.0</b> <br/>
+<b>weasyprint: 68.0</b> <br/>
+</p>
+<h4>Other packages</h4>
+<p>
+  
+    
+    __future__: unknown <br/>
+    
+  
+    
+    __hello__: unknown <br/>
+    
+  
+    
+    __phello__: unknown <br/>
+    
+  
+    
+    _aix_support: unknown <br/>
+    
+  
+    
+    _android_support: unknown <br/>
+    
+  
+    
+    _apple_support: unknown <br/>
+    
+  
+    
+    _asyncio: unknown <br/>
+    
+  
+    
+    _bisect: unknown <br/>
+    
+  
+    
+    _blake2: unknown <br/>
+    
+  
+    
+    _brotli: unknown <br/>
+    
+  
+    
+    _bz2: unknown <br/>
+    
+  
+    
+    _cffi_backend: unknown <br/>
+    
+  
+    
+    _codecs_cn: unknown <br/>
+    
+  
+    
+    _codecs_hk: unknown <br/>
+    
+  
+    
+    _codecs_iso2022: unknown <br/>
+    
+  
+    
+    _codecs_jp: unknown <br/>
+    
+  
+    
+    _codecs_kr: unknown <br/>
+    
+  
+    
+    _codecs_tw: unknown <br/>
+    
+  
+    
+    _collections_abc: unknown <br/>
+    
+  
+    
+    _colorize: unknown <br/>
+    
+  
+    
+    _compat_pickle: unknown <br/>
+    
+  
+    
+    _compression: unknown <br/>
+    
+  
+    
+    _contextvars: unknown <br/>
+    
+  
+    
+    _csv: unknown <br/>
+    
+  
+    
+    _ctypes: unknown <br/>
+    
+  
+    
+    _ctypes_test: unknown <br/>
+    
+  
+    
+    _curses: unknown <br/>
+    
+  
+    
+    _curses_panel: unknown <br/>
+    
+  
+    
+    _datetime: unknown <br/>
+    
+  
+    
+    _dbm: unknown <br/>
+    
+  
+    
+    _decimal: unknown <br/>
+    
+  
+    
+    _elementtree: unknown <br/>
+    
+  
+    
+    _gdbm: unknown <br/>
+    
+  
+    
+    _hashlib: unknown <br/>
+    
+  
+    
+    _heapq: unknown <br/>
+    
+  
+    
+    _interpchannels: unknown <br/>
+    
+  
+    
+    _interpqueues: unknown <br/>
+    
+  
+    
+    _interpreters: unknown <br/>
+    
+  
+    
+    _ios_support: unknown <br/>
+    
+  
+    
+    _json: unknown <br/>
+    
+  
+    
+    _lsprof: unknown <br/>
+    
+  
+    
+    _lzma: unknown <br/>
+    
+  
+    
+    _markupbase: unknown <br/>
+    
+  
+    
+    _md5: unknown <br/>
+    
+  
+    
+    _multibytecodec: unknown <br/>
+    
+  
+    
+    _multiprocessing: unknown <br/>
+    
+  
+    
+    _opcode: unknown <br/>
+    
+  
+    
+    _opcode_metadata: unknown <br/>
+    
+  
+    
+    _osx_support: unknown <br/>
+    
+  
+    
+    _pickle: unknown <br/>
+    
+  
+    
+    _posixshmem: unknown <br/>
+    
+  
+    
+    _posixsubprocess: unknown <br/>
+    
+  
+    
+    _py_abc: unknown <br/>
+    
+  
+    
+    _pydatetime: unknown <br/>
+    
+  
+    
+    _pydecimal: unknown <br/>
+    
+  
+    
+    _pyio: unknown <br/>
+    
+  
+    
+    _pylong: unknown <br/>
+    
+  
+    
+    _pyrepl: unknown <br/>
+    
+  
+    
+    _queue: unknown <br/>
+    
+  
+    
+    _random: unknown <br/>
+    
+  
+    
+    _sass: unknown <br/>
+    
+  
+    
+    _sha1: unknown <br/>
+    
+  
+    
+    _sha2: unknown <br/>
+    
+  
+    
+    _sha3: unknown <br/>
+    
+  
+    
+    _sitebuiltins: unknown <br/>
+    
+  
+    
+    _socket: unknown <br/>
+    
+  
+    
+    _sqlite3: unknown <br/>
+    
+  
+    
+    _ssl: unknown <br/>
+    
+  
+    
+    _statistics: unknown <br/>
+    
+  
+    
+    _strptime: unknown <br/>
+    
+  
+    
+    _struct: unknown <br/>
+    
+  
+    
+    _sysconfigdata__linux_x86_64-linux-gnu: unknown <br/>
+    
+  
+    
+    _testbuffer: unknown <br/>
+    
+  
+    
+    _testcapi: unknown <br/>
+    
+  
+    
+    _testclinic: unknown <br/>
+    
+  
+    
+    _testclinic_limited: unknown <br/>
+    
+  
+    
+    _testexternalinspection: unknown <br/>
+    
+  
+    
+    _testimportmultiple: unknown <br/>
+    
+  
+    
+    _testinternalcapi: unknown <br/>
+    
+  
+    
+    _testlimitedcapi: unknown <br/>
+    
+  
+    
+    _testmultiphase: unknown <br/>
+    
+  
+    
+    _testsinglephase: unknown <br/>
+    
+  
+    
+    _threading_local: unknown <br/>
+    
+  
+    
+    _tkinter: unknown <br/>
+    
+  
+    
+    _uuid: unknown <br/>
+    
+  
+    
+    _weakrefset: unknown <br/>
+    
+  
+    
+    _xxtestfuzz: unknown <br/>
+    
+  
+    
+    _yaml: unknown <br/>
+    
+  
+    
+    _zoneinfo: unknown <br/>
+    
+  
+    
+    abc: unknown <br/>
+    
+  
+    
+    alabaster: 1.0.0 <br/>
+    
+  
+    
+    antigravity: unknown <br/>
+    
+  
+    
+    argparse: unknown <br/>
+    
+  
+    
+    array: unknown <br/>
+    
+  
+    
+    ast: unknown <br/>
+    
+  
+    
+    asyncio: unknown <br/>
+    
+  
+    
+    babel: 2.17.0 <br/>
+    
+  
+    
+    base64: unknown <br/>
+    
+  
+    
+    bdb: unknown <br/>
+    
+  
+    
+    binascii: unknown <br/>
+    
+  
+    
+    bisect: unknown <br/>
+    
+  
+    
+    brotli: 1.2.0 <br/>
+    
+  
+    
+    bs4: unknown <br/>
+    
+  
+    
+    bz2: unknown <br/>
+    
+  
+    
+    calendar: unknown <br/>
+    
+  
+    
+    certifi: 2026.1.4 <br/>
+    
+  
+    
+    cffi: 2.0.0 <br/>
+    
+  
+    
+    charset_normalizer: 3.4.4 <br/>
+    
+  
+    
+    cmath: unknown <br/>
+    
+  
+    
+    cmd: unknown <br/>
+    
+  
+    
+    code: unknown <br/>
+    
+  
+    
+    codecs: unknown <br/>
+    
+  
+    
+    codeop: unknown <br/>
+    
+  
+    
+    collections: unknown <br/>
+    
+  
+    
+    colorsys: unknown <br/>
+    
+  
+    
+    compileall: unknown <br/>
+    
+  
+    
+    concurrent: unknown <br/>
+    
+  
+    
+    configparser: unknown <br/>
+    
+  
+    
+    contextlib: unknown <br/>
+    
+  
+    
+    contextvars: unknown <br/>
+    
+  
+    
+    copy: unknown <br/>
+    
+  
+    
+    copyreg: unknown <br/>
+    
+  
+    
+    cProfile: unknown <br/>
+    
+  
+    
+    cssselect2: 0.8.0 <br/>
+    
+  
+    
+    csv: unknown <br/>
+    
+  
+    
+    ctypes: unknown <br/>
+    
+  
+    
+    curses: unknown <br/>
+    
+  
+    
+    dataclasses: unknown <br/>
+    
+  
+    
+    datetime: unknown <br/>
+    
+  
+    
+    dbm: unknown <br/>
+    
+  
+    
+    decimal: unknown <br/>
+    
+  
+    
+    difflib: unknown <br/>
+    
+  
+    
+    dis: unknown <br/>
+    
+  
+    
+    doctest: unknown <br/>
+    
+  
+    
+    docutils: 0.22.4 <br/>
+    
+  
+    
+    email: unknown <br/>
+    
+  
+    
+    encodings: unknown <br/>
+    
+  
+    
+    ensurepip: unknown <br/>
+    
+  
+    
+    enum: unknown <br/>
+    
+  
+    
+    fcntl: unknown <br/>
+    
+  
+    
+    filecmp: unknown <br/>
+    
+  
+    
+    fileinput: unknown <br/>
+    
+  
+    
+    fnmatch: unknown <br/>
+    
+  
+    
+    fontTools: 4.61.1 <br/>
+    
+  
+    
+    fractions: unknown <br/>
+    
+  
+    
+    ftplib: unknown <br/>
+    
+  
+    
+    functools: unknown <br/>
+    
+  
+    
+    genericpath: unknown <br/>
+    
+  
+    
+    getopt: unknown <br/>
+    
+  
+    
+    getpass: unknown <br/>
+    
+  
+    
+    gettext: unknown <br/>
+    
+  
+    
+    glob: unknown <br/>
+    
+  
+    
+    graphlib: unknown <br/>
+    
+  
+    
+    grp: unknown <br/>
+    
+  
+    
+    gzip: unknown <br/>
+    
+  
+    
+    hashlib: unknown <br/>
+    
+  
+    
+    heapq: unknown <br/>
+    
+  
+    
+    hmac: unknown <br/>
+    
+  
+    
+    html: unknown <br/>
+    
+  
+    
+    http: unknown <br/>
+    
+  
+    
+    idlelib: unknown <br/>
+    
+  
+    
+    idna: 3.11 <br/>
+    
+  
+    
+    imagesize: 1.4.1 <br/>
+    
+  
+    
+    imaplib: unknown <br/>
+    
+  
+    
+    importlib: unknown <br/>
+    
+  
+    
+    inspect: unknown <br/>
+    
+  
+    
+    io: unknown <br/>
+    
+  
+    
+    ipaddress: unknown <br/>
+    
+  
+    
+    jinja2: 3.1.6 <br/>
+    
+  
+    
+    json: unknown <br/>
+    
+  
+    
+    keyword: unknown <br/>
+    
+  
+    
+    linecache: unknown <br/>
+    
+  
+    
+    locale: unknown <br/>
+    
+  
+    
+    logging: unknown <br/>
+    
+  
+    
+    lzma: unknown <br/>
+    
+  
+    
+    mailbox: unknown <br/>
+    
+  
+    
+    markdown_it: unknown <br/>
+    
+  
+    
+    markupsafe: 3.0.3 <br/>
+    
+  
+    
+    math: unknown <br/>
+    
+  
+    
+    mdit_py_plugins: 0.5.0 <br/>
+    
+  
+    
+    mdurl: 0.1.2 <br/>
+    
+  
+    
+    mimetypes: unknown <br/>
+    
+  
+    
+    mmap: unknown <br/>
+    
+  
+    
+    modulefinder: unknown <br/>
+    
+  
+    
+    multiprocessing: unknown <br/>
+    
+  
+    
+    myst_parser: 5.0.0 <br/>
+    
+  
+    
+    netrc: unknown <br/>
+    
+  
+    
+    ntpath: unknown <br/>
+    
+  
+    
+    nturl2path: unknown <br/>
+    
+  
+    
+    numbers: unknown <br/>
+    
+  
+    
+    opcode: unknown <br/>
+    
+  
+    
+    operator: unknown <br/>
+    
+  
+    
+    optparse: unknown <br/>
+    
+  
+    
+    os: unknown <br/>
+    
+  
+    
+    packaging: 26.0 <br/>
+    
+  
+    
+    pathlib: unknown <br/>
+    
+  
+    
+    pdb: unknown <br/>
+    
+  
+    
+    piccolo_theme: 0.24.0 <br/>
+    
+  
+    
+    pickle: unknown <br/>
+    
+  
+    
+    pickletools: unknown <br/>
+    
+  
+    
+  
+    
+    pip: 25.3 <br/>
+    
+  
+    
+    pkgutil: unknown <br/>
+    
+  
+    
+    platform: unknown <br/>
+    
+  
+    
+    plistlib: unknown <br/>
+    
+  
+    
+    poplib: unknown <br/>
+    
+  
+    
+    posixpath: unknown <br/>
+    
+  
+    
+    pprint: unknown <br/>
+    
+  
+    
+    profile: unknown <br/>
+    
+  
+    
+    pstats: unknown <br/>
+    
+  
+    
+    pty: unknown <br/>
+    
+  
+    
+    py_compile: unknown <br/>
+    
+  
+    
+    pyclbr: unknown <br/>
+    
+  
+    
+    pycparser: 3.0 <br/>
+    
+  
+    
+    pydoc: unknown <br/>
+    
+  
+    
+    pydoc_data: unknown <br/>
+    
+  
+    
+    pydyf: 0.12.1 <br/>
+    
+  
+    
+    pyexpat: unknown <br/>
+    
+  
+    
+    pygments: 2.19.2 <br/>
+    
+  
+    
+    pyphen: 0.17.2 <br/>
+    
+  
+    
+    pysassc: unknown <br/>
+    
+  
+    
+    queue: unknown <br/>
+    
+  
+    
+    quopri: unknown <br/>
+    
+  
+    
+    random: unknown <br/>
+    
+  
+    
+    re: unknown <br/>
+    
+  
+    
+    readline: unknown <br/>
+    
+  
+    
+    reprlib: unknown <br/>
+    
+  
+    
+    requests: 2.32.5 <br/>
+    
+  
+    
+    resource: unknown <br/>
+    
+  
+    
+    rlcompleter: unknown <br/>
+    
+  
+    
+    roman_numerals: 4.1.0 <br/>
+    
+  
+    
+    runpy: unknown <br/>
+    
+  
+    
+    sass: unknown <br/>
+    
+  
+    
+    sasstests: unknown <br/>
+    
+  
+    
+    sassutils: unknown <br/>
+    
+  
+    
+    sched: unknown <br/>
+    
+  
+    
+    secrets: unknown <br/>
+    
+  
+    
+    select: unknown <br/>
+    
+  
+    
+    selectors: unknown <br/>
+    
+  
+    
+    shelve: unknown <br/>
+    
+  
+    
+    shlex: unknown <br/>
+    
+  
+    
+    shutil: unknown <br/>
+    
+  
+    
+    signal: unknown <br/>
+    
+  
+    
+    site: unknown <br/>
+    
+  
+    
+    smtplib: unknown <br/>
+    
+  
+    
+    snowballstemmer: 3.0.1 <br/>
+    
+  
+    
+    socket: unknown <br/>
+    
+  
+    
+    socketserver: unknown <br/>
+    
+  
+    
+    soupsieve: 2.8.3 <br/>
+    
+  
+    
+  
+    
+    sphinx_rtd_theme: 3.1.0 <br/>
+    
+  
+    
+  
+    
+    sqlite3: unknown <br/>
+    
+  
+    
+    sre_compile: unknown <br/>
+    
+  
+    
+    sre_constants: unknown <br/>
+    
+  
+    
+    sre_parse: unknown <br/>
+    
+  
+    
+    ssl: unknown <br/>
+    
+  
+    
+    stat: unknown <br/>
+    
+  
+    
+    statistics: unknown <br/>
+    
+  
+    
+    string: unknown <br/>
+    
+  
+    
+    stringprep: unknown <br/>
+    
+  
+    
+    struct: unknown <br/>
+    
+  
+    
+    subprocess: unknown <br/>
+    
+  
+    
+    symtable: unknown <br/>
+    
+  
+    
+    sysconfig: unknown <br/>
+    
+  
+    
+    syslog: unknown <br/>
+    
+  
+    
+    tabnanny: unknown <br/>
+    
+  
+    
+    tarfile: unknown <br/>
+    
+  
+    
+    tempfile: unknown <br/>
+    
+  
+    
+    termios: unknown <br/>
+    
+  
+    
+    test: unknown <br/>
+    
+  
+    
+    textwrap: unknown <br/>
+    
+  
+    
+    this: unknown <br/>
+    
+  
+    
+    threading: unknown <br/>
+    
+  
+    
+    timeit: unknown <br/>
+    
+  
+    
+    tinycss2: 1.5.1 <br/>
+    
+  
+    
+    tinyhtml5: 2.0.0 <br/>
+    
+  
+    
+    tkinter: unknown <br/>
+    
+  
+    
+    token: unknown <br/>
+    
+  
+    
+    tokenize: unknown <br/>
+    
+  
+    
+    tomllib: unknown <br/>
+    
+  
+    
+    trace: unknown <br/>
+    
+  
+    
+    traceback: unknown <br/>
+    
+  
+    
+    tracemalloc: unknown <br/>
+    
+  
+    
+    tty: unknown <br/>
+    
+  
+    
+    turtle: unknown <br/>
+    
+  
+    
+    turtledemo: unknown <br/>
+    
+  
+    
+    types: unknown <br/>
+    
+  
+    
+    typing: unknown <br/>
+    
+  
+    
+    typing_extensions: 4.15.0 <br/>
+    
+  
+    
+    unicodedata: unknown <br/>
+    
+  
+    
+    unittest: unknown <br/>
+    
+  
+    
+    urllib: unknown <br/>
+    
+  
+    
+    urllib3: 2.6.3 <br/>
+    
+  
+    
+    uuid: unknown <br/>
+    
+  
+    
+    venv: unknown <br/>
+    
+  
+    
+    warnings: unknown <br/>
+    
+  
+    
+    wave: unknown <br/>
+    
+  
+    
+    weakref: unknown <br/>
+    
+  
+    
+  
+    
+    webbrowser: unknown <br/>
+    
+  
+    
+    webencodings: 0.5.1 <br/>
+    
+  
+    
+    wsgiref: unknown <br/>
+    
+  
+    
+    xml: unknown <br/>
+    
+  
+    
+    xmlrpc: unknown <br/>
+    
+  
+    
+    xxlimited: unknown <br/>
+    
+  
+    
+    xxlimited_35: unknown <br/>
+    
+  
+    
+    xxsubtype: unknown <br/>
+    
+  
+    
+    yaml: unknown <br/>
+    
+  
+    
+    zipapp: unknown <br/>
+    
+  
+    
+    zipfile: unknown <br/>
+    
+  
+    
+    zipimport: unknown <br/>
+    
+  
+    
+    zlib: unknown <br/>
+    
+  
+    
+    zoneinfo: unknown <br/>
+    
+  
+    
+    zopfli: 0.4.0 <br/>
+</p>
+<article id="back-cover">
+<div class="container">
+<div class="back-cover-footer">
+<p>
+                    © Copyright BBCYC 2026.
+            </p>
+<p>
+                  Created using <a href="http://sphinx-doc.org/">Sphinx</a> 9.1.0.
+            </p>
+</div>
+</div>
+</article>
+</body>
+</html>
