@@ -98,7 +98,7 @@ The engine hours meter works by sampling the voltage output from the alternator.
 
 ### Offsite Notifier
 
-The offsite notifier uses a service called [NTFY](ntfy.sh) - sending short notifications from the Raspberry Pi which can be read by the Boatswain's team and committee.  To ensure that Skippers and Mates are aware that a notification is running, a short jingle is played.
+The offsite notifier uses a service called ([ntfy.sh](https://ntfy.sh/)) - sending short notifications from the Raspberry Pi which can be read by the Boatswain's team and committee.  To ensure that Skippers and Mates are aware that a notification is running, a short jingle is played.  For information on the NTFY channel that you need to subscribe to, please contact the commodore.
 
 #### Location
 
