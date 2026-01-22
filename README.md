@@ -2,7 +2,7 @@
 
 This repo generates documentation for AoH Navigation Systems
 
-Pages are written in (MarkDown)[https://www.markdownguide.org/]
+Pages are written in [MarkDown](https://www.markdownguide.org/)
 
 Each individual markdown page is hosted in doc/pages
 
