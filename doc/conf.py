@@ -31,6 +31,10 @@ html_static_path = ['_static']
 # -- Options for PDF output -------------------------------------------------
 # https://sphinx-simplepdf.readthedocs.io/en/latest/configuration.html
 
-simplepdf_file_name = "AoH-Navigation.pdf"
+from datetime import datetime
+now = datetime.now() # current date and time
+date_time = now.strftime("%Y%m%d")
+
+simplepdf_file_name = "AoH-Navigation-" + version + "-" + date_time +  ".pdf"
 simplepdf_debug = True
 
