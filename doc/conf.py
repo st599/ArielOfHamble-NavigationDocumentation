@@ -35,6 +35,6 @@ from datetime import datetime
 now = datetime.now() # current date and time
 date_time = now.strftime("%Y%m%d")
 
-simplepdf_file_name = "AoH-Navigation-" + version + "-" + date_time +  ".pdf"
+simplepdf_file_name = "AoH-Navigation-v" + version + "-" + date_time +  ".pdf"
 simplepdf_debug = True
 
