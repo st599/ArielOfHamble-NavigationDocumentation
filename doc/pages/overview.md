@@ -98,6 +98,8 @@ The measured and computed data is collated in a central database by a software p
 
 OpenPlotter also provides a software chartplotter, weather prediction software, interfaces for autohelms, internet browsing, video viewing and an interface for a range of radio communications (at present we haven't implemented the radio communications module on Ariel)
 
+Further details on OpenPlotter can be found at the [OpenPlotter Website](https://openmarine.net/openplotter).
+
 ### SignalK
 
 SignalK is software designed to import data from a variety of sources around the boat and stores it in a central database which can be accessed by other software.  On Ariel, the SignalK servier takes data from a range of inputs such as the NMEA 0143 bus used by the TackTicks and EmTrak, from the barometer and thermometer in the navigation locker and software modules running on the Raspberry Pi and imports them in to the database.  SignalK also stores a range of static data in this database which can be used in calculations, e.g. vessel draught.
@@ -110,7 +112,7 @@ SignalK stores data addresses and values, for example:
 
 This database is available to other software to read from - the plotter software, OpenCPN, receives all of its locations details, AIS vessels to overlay, DSC alerts directly from the SignalK database.  SignalK also has a number of output plugins so the data is converted back to NMEA 0143 so derived values can be displayed on the TackTicks, to a data stream that can be used by Navionics or similar on member's phones and tablets and in some cases to files so that trends can be observed (e.g. we're actively monitoring battery state to see if we can understand better what is causing mysterious battery drainage).
 
-Further details on SignalK can be found at [SignalK Website](https://signalk.org/)
+Further details on SignalK can be found at [SignalK Website](https://signalk.org/).
 
 ### OpenCPN
 
@@ -126,6 +128,8 @@ OpenCPN is a fully functional chartplotter which can:
 * Can display tidal heights and currents, magnetic offsets etc.
 * Can display Radar overlays.
 * Can be extended by plugins to do tasks such as Vessel Data Recording.
+
+Further details on OpenCPN can be found at [OpenCPN Website](https://www.opencpn.org/)
 
 > NOTE: OpenCPN is freely available on Windows, Mac, Linux and Android - please download and familiarise yourself - the charts for the entirety of the UK are also available for about £20.
 
