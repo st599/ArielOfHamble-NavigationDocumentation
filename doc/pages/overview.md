@@ -10,7 +10,7 @@ The TackTick instruments are used to generate depth, speed through the water, wa
 
 ### Display Units
 
-*Insert Image*
+![Instruments](../assets/images/ticktack.jpg)
 
 Ariel has 3 display units:
 * 1 wind display which can show either apparent wind direction and speed or true wind direction and speed.
@@ -20,13 +20,13 @@ Ariel has 3 display units:
 
 ### Depth
 
-*Insert Image*
+![Depth Transducer](../assets/images/depth-transducer.jpg)
 
 The depth sounder uses ultrasonic waves to measure the depth beneath the transducer.  The offset between the transducer and the bottom of the keel is applied in the Raspberry Pi.  The depth sounder also provides the sea water temperature to the network.  It connects to the unit in the navigation cupboard using a proprietary wired direct connection.
 
 ### Speed
 
-*Insert Image*
+![Speed Transducer](../assets/images/speed-transducer.jpg)
 
 The speed transducer uses a paddle wheel to measure the speed of the boat throught the water.  It connects to the unit in the navigation cupboard using a proprietary wired direct connection.
 
@@ -38,7 +38,7 @@ The Wind Speed and Direction unit at the top of the mast is solar powered.  It t
 
 ## EmTrak AIS
 
-*Insert Image*
+![EmTrak B900](../assets/images/B900.jpg)
 
 The EmTrak AIS is a multipurpose device.  It is the vessel's source of location data, it is an AIS class B+ transceiver, sending the boat's location to other vessels and, when in range, shore stations, it receives the locations of other vessels and it has an inbuilt switch connecting both the internal AIS and the VHF to the mast-head antenna.
 
@@ -68,7 +68,7 @@ The EmTrak also sends:
 
 ## Standard Horizon VHF
 
-*Insert Image*
+![SH-VHF](../assets/images/gx1800e.jpg)
 
 The Standard Horizon VHF uses the GPS signal from the EmTrack AIS unit. The location and time are shown on the front panel LCD of the VHF unit - these are required to make the DSC emergency calling system work. 
 
@@ -114,7 +114,7 @@ Further details on SignalK can be found at [SignalK Website](https://signalk.org
 
 ### OpenCPN
 
-*Insert Image*
+![OpenCPN](../assets/images/opencpn.jpg)
 
 OpenCPN is a fully functional chartplotter which can:
 
@@ -147,7 +147,7 @@ MOB alarms work in a number of different ways.  If members wish to use a DSC bas
 
 The location of MOB and Safery alerts are shown on the chart surrounded by a flashing ragged 'circle' and an alarm is sounded. 
 
-*Insert Image*
+![AIS SART](../assets/images/ais-sart.jpg)
 
 ### Dashboard
 
@@ -159,7 +159,7 @@ The dashboard has a number of pages:
 * Location data - location, local time, sunrise and sunset times at this location
 * Boat data - engine hours, battery status etc.
 
-*Insert Image*
+![KIP Demo](../assets/images/KIPDemo.png)
 
 ## Custom Software
 
