@@ -187,12 +187,24 @@ The sunset notification lets us know that the navigation system is running at su
 
 ### Better Data Dashboard Access
 
+At present the dashboard is only available on the Raspberry Pi at the chart table via a web browser which competes for screen real-estate with the chartplotter.  The boatswain's team has ideas for two projects in the run up to the new season:
+
+* Make the KIP dashboard viewable on the local Ariel of Hamble network so that the dashboard can be viewed on a tablet or phone in the cockpit.
+
+* Make a small, basic repeater that can be installed near the Raspberry Pi monitor showing only the most important data.
+
 ### Shutdown Information
 
 We are planning to use the offsite notifier to send a set of data when the navigation system is shutdown.  This would be used for information important to planning maintenance and spotting early indications of issues.  In the initial rollout we're hoping to send engine hours, battery status and cabin humidity with a hope to add further information such as fridge minimum temperature, engine maximum temperature, bilge water level etc.
 
 ### Better Engine Information
 
+There is an open source project based on OpenPlotter to interface to a Volvo Penta engine and send data such as RPM, temperature, etc. to the navigation network.
+
 ### Better Battery Information
+
+There have been some reports of batteries misbehaving, so we're planning on adding battery monitors to both the Engine and House battery banks that will allow us to measure the battery voltage, provide this to the navigation network and graphically interpret the data so we can see if what correlation there is between voltage drop and equipment usage onboard.
+
+> To quote the Commodore's near namesake: *"When you can measure what you are speaking about, and express it in numbers, you know something about it; but when you cannot measure it, when you cannot express it in numbers, your knowledge is of a meagre and unsatisfactory kind."*
 
 ### Simplify system WiFi for crew
