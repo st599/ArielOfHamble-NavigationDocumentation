@@ -1,7 +1,5 @@
 # Navigation Overview
 
-![Ariel Navigating the Kiel Canal](../assets/images/aoh.jpg)
-
 This is an overview of the software and hardware used for Ariel of Hamble's Navigation.  The term navigation network is used to describe the network that is used to pass data between nodes around the boat, but in reality it is a number of networks.  Further data will be provided in a deep-dive section at a future date.
 
 > NOTE: Please be aware that some information is measured and some is derived from those measurements.  For example, Apparent Wind Speed (AWS) is measured and True Wind Speed (TWS) is calculated from AWS and Speed Through the Water (STW).  A problem with a measured value will cause knock-on issues with values derived from it.
