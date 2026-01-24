@@ -4,10 +4,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Ariel of Hamble Navigation 0.3 documentation</title>
+<title>Ariel of Hamble Navigation 0.4 documentation</title>
 <link href="_static/pygments.css?v=d75fae25" rel="stylesheet" type="text/css"/>
 <link href="_static/main.css?v=9187bc91" rel="stylesheet" type="text/css"/>
-<script src="_static/documentation_options.js?v=b38ade05"></script>
+<script src="_static/documentation_options.js?v=d9a53d41"></script>
 <script src="_static/doctools.js?v=fd6eb6e6"></script>
 <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
 <link href="genindex.html" rel="index" title="Index"/>
@@ -22,7 +22,7 @@
 <div class="cover-middle">
 <div class="title">
 <h1 class="title-cover">Ariel of Hamble Navigation</h1>
-<p class="subtitle-cover">Version 0.3</p>
+<p class="subtitle-cover">Version 0.4</p>
 <span class="meta">
 </span>
 </div>
@@ -70,7 +70,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/other_openplotter_software#screenshot">Screenshot</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#document-pages/shutdown">Switching Off the Navigation Sytems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/shutdown">Switching Off the Navigation System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/troubleshooting">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/reporting_fault">Reporting a Fault</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/update_list">Update List</a></li>
@@ -128,6 +128,7 @@
 <p><img alt="EmTrak B900" src="_images/B900.jpg"/></p>
 <p>The EmTrak AIS is a multipurpose device.  It is the vessel’s source of location data, it is an AIS class B+ transceiver, sending the boat’s location to other vessels and, when in range, shore stations, it receives the locations of other vessels and it has an inbuilt switch connecting both the internal AIS and the VHF to the mast-head antenna.</p>
 <p>To prevent the VHF being powered on and transmitting in to a switched off AIS unit, both the EmTrak and VHF are on the same power switch “VHF”.</p>
+<p>The EmTrak AIS uses the GPS antenna on the stern railing.</p>
 <section id="gps-information">
 <h4>GPS Information<a class="headerlink" href="#gps-information" title="Link to this heading">¶</a></h4>
 <p>The EmTrak sends the following GNSS information to the Navigation system:</p>
@@ -290,6 +291,13 @@
 </section>
 <span id="document-pages/booting"></span><section id="starting-the-navigation-system">
 <h2>Starting the Navigation System<a class="headerlink" href="#starting-the-navigation-system" title="Link to this heading">¶</a></h2>
+<p>The navigation system needs to be turned on in a particular order.</p>
+<ol class="arabic simple">
+<li><p>As described in the overview, the boat’s GNSS source is the EmTrak AIS unit.  As this is connected to the VHF to share the antenna, it is powered by the VHF switch.  Switch on the VHF first.</p></li>
+<li><p>Wait for the Location and Time to appear on the VHF screen.</p></li>
+<li><p>Power on the Navigation switch.  The Raspberry Pi will boot and the  OpenCPN chartplotter software will load.  The satellite position indicator on OpenCPN should show 3-4 bars.</p></li>
+<li><p>The navigation instruments need to be switched on near the navigation cupboard.  Switching on one will send a signal to the other units and they will switch on too.  Once a connection to the RayNet network occurs, information will start to be displayed.  The units can now be moved outside.</p></li>
+</ol>
 </section>
 <span id="document-pages/opencpn_basic"></span><section id="basic-use-of-opencpn-plotter">
 <h2>Basic Use of OpenCPN Plotter<a class="headerlink" href="#basic-use-of-opencpn-plotter" title="Link to this heading">¶</a></h2>
@@ -321,8 +329,20 @@
 <h3>Screenshot<a class="headerlink" href="#screenshot" title="Link to this heading">¶</a></h3>
 </section>
 </section>
-<span id="document-pages/shutdown"></span><section id="switching-off-the-navigation-sytems">
-<h2>Switching Off the Navigation Sytems<a class="headerlink" href="#switching-off-the-navigation-sytems" title="Link to this heading">¶</a></h2>
+<span id="document-pages/shutdown"></span><section id="switching-off-the-navigation-system">
+<h2>Switching Off the Navigation System<a class="headerlink" href="#switching-off-the-navigation-system" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>The TackTick Instruments are shut off by switching off one unit, the others receive a command to shut down.</p></li>
+<li><p>Turn off the VHF Switch on the Switch Panel.</p></li>
+<li><p>The preferred way of switching off the navigation is to request the Rspberry Pi mini computer to shut down.  To do this, first click on the Raspberry logo in the top left of the screen.</p></li>
+<li><p>Then click “Shut Down”.</p></li>
+</ol>
+<blockquote>
+<div><p>NOTE: If the navigation switch is turned off before a shut down is requested, the additional MacArthur HAT board attached to the Raspberry Pi will immediately request a shutdown of the system.  This can take up to a minute.  Please wait at least 2 mins before switching off the Battery Isolator.</p>
+</div></blockquote>
+<blockquote>
+<div><p>NOTE: DO NOT just switch off the Battery Isolator - this could corrupt the data on the Raspberry Pi mini computer.</p>
+</div></blockquote>
 </section>
 <span id="document-pages/troubleshooting"></span><section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
@@ -357,15 +377,19 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>0.3</p></td>
+<tr class="row-even"><td><p>0.4</p></td>
+<td><p><em>Booting and Shutting Down</em> Added data on how to safely boot and shutdown the system</p></td>
+<td><p>22/01/26</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.3</p></td>
 <td><p><em>Technical Overview</em> Added an overview of the navigation hardware, sensors and software used on Ariel of Hamble</p></td>
 <td><p>22/01/26</p></td>
 </tr>
-<tr class="row-odd"><td><p>0.2</p></td>
+<tr class="row-even"><td><p>0.2</p></td>
 <td><p><em>Automated PDF creation</em> Set up creation of PDF using Sphinx SimplePDF</p></td>
 <td><p>21/01/26</p></td>
 </tr>
-<tr class="row-even"><td><p>0.1</p></td>
+<tr class="row-odd"><td><p>0.1</p></td>
 <td><p><em>Automated webpage creation</em> Set up publishing to GitHub pages using Sphinx to convert from Markdown to HTML</p></td>
 <td><p>21/01/26</p></td>
 </tr>
