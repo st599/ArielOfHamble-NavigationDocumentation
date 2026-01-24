@@ -2,25 +2,35 @@
 
 ![Ariel Navigating the Kiel Canal](../assets/images/aoh.jpg)
 
-This is an overview of the software and hardware used for Ariel of Hamble's Navigation.
+This is an overview of the software and hardware used for Ariel of Hamble's Navigation.  The term navigation network is used to describe the network that is used to pass data between nodes around the boat, but in reality it is a number of networks.  Further data will be provided in a deep-dive section at a future date.
 
 > NOTE: Please be aware that some information is measured and some is derived from those measurements.  For example, Apparent Wind Speed (AWS) is measured and True Wind Speed (TWS) is calculated from AWS and Speed Through the Water (STW).  A problem with a measured value will cause knock-on issues with values derived from it.
 
 ## TackTicks
 
+The TackTick instruments are used to generate depth, speed through the water, water temperature, apparent wind speed and direction.  The TackTick units use a proprietary radio network called [Raymarine Micronet](https://open-boat-projects.org/en/micronet/) to pass information between the units installed in the navigation cupboard, the wind sensor and the display units.
+
+### Display Units
+
+Ariel has 3 display units:
+* 1 wind display which can show either apparent wind direction and speed or true wind direction and speed.
+* 2 double number displays which can be configured to show information such as depth, speed through the water, COG and SOG, time, location.
+
+> NOTE - please be very careful with the TackTick display units.  They are extraordinarily expensive to replace - over £2000 per set.
+
 ### Depth
 
-The depth sounder uses ultrasonic waves to measure the depth beneath the transducer.
+The depth sounder uses ultrasonic waves to measure the depth beneath the transducer.  The offset between the transducer and the bottom of the keel is applied in the Raspberry Pi.  The depth sounder also provides the sea water temperature to the network.  It connects to the unit in the navigation cupboard using a proprietary wired direct connection.
 
 ### Speed
 
-The speed transducer uses a paddle wheel.
+The speed transducer uses a paddle wheel to measure the speed of the boat throught the water.  It connects to the unit in the navigation cupboard using a proprietary wired direct connection.
 
 ### Wind Speed and Direction
 
 ![Micronet](../assets/images/Micronet-768x464.png)
 
-The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called [Raymarine Micronet](https://open-boat-projects.org/en/micronet/).  The unit in the navigation locker then converts the proprietary data to standard NMEA 0143.
+The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called .  
 
 ## EmTrak AIS
 
