@@ -208,3 +208,7 @@ There have been some reports of batteries misbehaving, so we're planning on addi
 > To quote the Commodore's near namesake: *"When you can measure what you are speaking about, and express it in numbers, you know something about it; but when you cannot measure it, when you cannot express it in numbers, your knowledge is of a meagre and unsatisfactory kind."*
 
 ### Simplify system WiFi for crew
+
+At present, both the EmTrak AIS and the boat's internet router have wireless access points - so there are 2 Ariel networks.
+
+The optimal is to use only the boat router - this gives crew handheld device software such as Navionics access to data such as depth, wind speed and to safety alarms such as local MOB transmissions.
