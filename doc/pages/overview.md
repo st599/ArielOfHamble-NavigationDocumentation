@@ -46,7 +46,7 @@ To prevent the VHF being powered on and transmitting in to a switched off AIS un
 
 The EmTrak AIS uses the GPS antenna on the stern railing.
 
-### GPS Information
+### GNSS Information
 
 The EmTrak sends the following GNSS information to the Navigation system:
 * Location
@@ -56,7 +56,7 @@ The EmTrak sends the following GNSS information to the Navigation system:
 * Number of Satellites
 * Precision
 
-> NOTE: The EmTrak unit uses the US GPS, EU Galileo, Russian Glonass and Chinese Beidou locations satellites.
+> NOTE: The EmTrak unit uses the US GPS, EU Galileo, Russian Glonass and Chinese Beidou GNSS satellites.
 
 ### AIS Targets
 
@@ -90,7 +90,7 @@ In adition to the main computer board, we have added two other specialist boards
 
 * SSD Hard Disk board - to allow us to run the software from a proper hard disk, not an SD card.
 
-## Open Plotter
+## OpenPlotter
 
 OpenPlotter is a Linux-based operating system designed to use a cheap RaspberryPi computer and convert it in to a fully functional plotter system.  It uses almost exclusively free, open source, community projects - which means it's fully tested by a large community, there's a number of projects around the world which maintain it and increase functionality and there's a method to request changes.
 

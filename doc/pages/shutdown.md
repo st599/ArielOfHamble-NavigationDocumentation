@@ -1,4 +1,4 @@
-# Switching Off the Navigation System
+# Shutting Down the Navigation System
 
 1. The TackTick Instruments are shut off by switching off one unit, the others receive a command to shut down.
 
