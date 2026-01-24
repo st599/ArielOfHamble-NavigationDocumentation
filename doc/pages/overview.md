@@ -12,6 +12,8 @@ The TackTick instruments are used to generate depth, speed through the water, wa
 
 ### Display Units
 
+*Insert Image*
+
 Ariel has 3 display units:
 * 1 wind display which can show either apparent wind direction and speed or true wind direction and speed.
 * 2 double number displays which can be configured to show information such as depth, speed through the water, COG and SOG, time, location.
@@ -20,9 +22,13 @@ Ariel has 3 display units:
 
 ### Depth
 
+*Insert Image*
+
 The depth sounder uses ultrasonic waves to measure the depth beneath the transducer.  The offset between the transducer and the bottom of the keel is applied in the Raspberry Pi.  The depth sounder also provides the sea water temperature to the network.  It connects to the unit in the navigation cupboard using a proprietary wired direct connection.
 
 ### Speed
+
+*Insert Image*
 
 The speed transducer uses a paddle wheel to measure the speed of the boat throught the water.  It connects to the unit in the navigation cupboard using a proprietary wired direct connection.
 
@@ -33,6 +39,8 @@ The speed transducer uses a paddle wheel to measure the speed of the boat throug
 The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called .  
 
 ## EmTrak AIS
+
+*Insert Image*
 
 The EmTrak AIS is a multipurpose device.  It is the vessel's source of location data, it is an AIS class B+ transceiver, sending the boat's location to other vessels and, when in range, shore stations, it receives the locations of other vessels and it has an inbuilt switch connecting both the internal AIS and the VHF to the mast-head antenna.
 
@@ -62,13 +70,29 @@ The EmTrak also sends:
 
 ## Standard Horizon VHF
 
+*Insert Image*
+
+The Standard Horizon VHF uses the GPS signal from the EmTrack AIS unit. The location and time are shown on the front panel LCD of the VHF unit - these are required to make the DSC emergency calling system work. 
+
+(The VHF has an in-built VHF too, this is switched off as having multiple GPS locations being added to the network was one of the causes of issues seen in the first season)
+
+The Standard Horizon also sends the location of emergency alerts received to the network so they can be viewed on the OpenCPN chart plotting software.
+
+## RaspberryPi
+
+*Insert Image*
+
+The RaspberryPi is the heart of the Navigation System.  It is a small, but fully functional, computer system that runs a free specialist operating system called OpenPlotter.  Originally designed for school students to be able to own a small, cheap computer - they're now used in many industrial settings.
+
+In adition to the main computer board, we have added two other specialist boards to the system (known as HATs).
+
+* MacArthur HAT - a specialist board produced by the company that creates OpenPlotter - it has inputs and outputs for NMEA 0183, NMEA 2000, NMEA OneNet, plus the ability to interface to industrial sensors.  The HAT also allows a safe shutdown of the computer board and has 2 sensors - environmental conditions in the cabin and a 9 degrees of freedom orientation sensor.
+
+* SSD Hard Disk board - to allow us to run the software from a proper hard disk, not an SD card.
+
 ## Open Plotter
 
-
-
-### RaspberryPi
-
-
+OpenPlotter is a Linux-based operating system designed to use a cheap RaspberryPi computer and convert it in to a fully functional
 
 ### SignalK
 
@@ -131,3 +155,5 @@ We are planning to use the offsite notifier to send a set of data when the navig
 ### Better Engine Information
 
 ### Better Battery Information
+
+### Simplify system WiFi for crew
