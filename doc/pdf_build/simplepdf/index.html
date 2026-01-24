@@ -49,6 +49,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#tackticks">TackTicks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#emtrak-ais">EmTrak AIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#standard-horizon-vhf">Standard Horizon VHF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#raspberrypi">RaspberryPi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#open-plotter">Open Plotter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#custom-software">Custom Software</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#future-projects">Future Projects</a></li>
@@ -87,30 +88,46 @@
 <div class="toctree-wrapper compound">
 <span id="document-pages/overview"></span><section id="navigation-overview">
 <h2>Navigation Overview<a class="headerlink" href="#navigation-overview" title="Link to this heading">¶</a></h2>
-<p>This is an overview of the software and hardware used for Ariel of Hamble’s Navigation.</p>
+<p>This is an overview of the software and hardware used for Ariel of Hamble’s Navigation.  The term navigation network is used to describe the network that is used to pass data between nodes around the boat, but in reality it is a number of networks.  Further data will be provided in a deep-dive section at a future date.</p>
 <blockquote>
 <div><p>NOTE: Please be aware that some information is measured and some is derived from those measurements.  For example, Apparent Wind Speed (AWS) is measured and True Wind Speed (TWS) is calculated from AWS and Speed Through the Water (STW).  A problem with a measured value will cause knock-on issues with values derived from it.</p>
 </div></blockquote>
 <section id="tackticks">
 <h3>TackTicks<a class="headerlink" href="#tackticks" title="Link to this heading">¶</a></h3>
+<p>The TackTick instruments are used to generate depth, speed through the water, water temperature, apparent wind speed and direction.  The TackTick units use a proprietary radio network called <a class="reference external" href="https://open-boat-projects.org/en/micronet/">Raymarine Micronet</a> to pass information between the units installed in the navigation cupboard, the wind sensor and the display units.</p>
+<section id="display-units">
+<h4>Display Units<a class="headerlink" href="#display-units" title="Link to this heading">¶</a></h4>
+<p><em>Insert Image</em></p>
+<p>Ariel has 3 display units:</p>
+<ul class="simple">
+<li><p>1 wind display which can show either apparent wind direction and speed or true wind direction and speed.</p></li>
+<li><p>2 double number displays which can be configured to show information such as depth, speed through the water, COG and SOG, time, location.</p></li>
+</ul>
+<blockquote>
+<div><p>NOTE - please be very careful with the TackTick display units.  They are extraordinarily expensive to replace - over £2000 per set.</p>
+</div></blockquote>
+</section>
 <section id="depth">
 <h4>Depth<a class="headerlink" href="#depth" title="Link to this heading">¶</a></h4>
-<p>The depth sounder uses ultrasonic waves to measure the depth beneath the transducer.</p>
+<p><em>Insert Image</em></p>
+<p>The depth sounder uses ultrasonic waves to measure the depth beneath the transducer.  The offset between the transducer and the bottom of the keel is applied in the Raspberry Pi.  The depth sounder also provides the sea water temperature to the network.  It connects to the unit in the navigation cupboard using a proprietary wired direct connection.</p>
 </section>
 <section id="speed">
 <h4>Speed<a class="headerlink" href="#speed" title="Link to this heading">¶</a></h4>
-<p>The speed transducer uses a paddle wheel.</p>
+<p><em>Insert Image</em></p>
+<p>The speed transducer uses a paddle wheel to measure the speed of the boat throught the water.  It connects to the unit in the navigation cupboard using a proprietary wired direct connection.</p>
 </section>
 <section id="wind-speed-and-direction">
 <h4>Wind Speed and Direction<a class="headerlink" href="#wind-speed-and-direction" title="Link to this heading">¶</a></h4>
 <p><img alt="Micronet" src="_images/Micronet-768x464.png"/></p>
-<p>The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called <a class="reference external" href="https://open-boat-projects.org/en/micronet/">Raymarine Micronet</a>.  The unit in the navigation locker then converts the proprietary data to standard NMEA 0143.</p>
+<p>The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called .</p>
 </section>
 </section>
 <section id="emtrak-ais">
 <h3>EmTrak AIS<a class="headerlink" href="#emtrak-ais" title="Link to this heading">¶</a></h3>
+<p><em>Insert Image</em></p>
 <p>The EmTrak AIS is a multipurpose device.  It is the vessel’s source of location data, it is an AIS class B+ transceiver, sending the boat’s location to other vessels and, when in range, shore stations, it receives the locations of other vessels and it has an inbuilt switch connecting both the internal AIS and the VHF to the mast-head antenna.</p>
-<p>To prevent the VHF being powered on and transmitting in to a switched off AIS unit, both the EmTrak and VHF are on the same power switch “VHF”.  Please switch on “VHF”, wait until it acquires a position and displays it on the VHF front panel and then switch on the “Navigation” switch.</p>
+<p>To prevent the VHF being powered on and transmitting in to a switched off AIS unit, both the EmTrak and VHF are on the same power switch “VHF”.</p>
 <section id="gps-information">
 <h4>GPS Information<a class="headerlink" href="#gps-information" title="Link to this heading">¶</a></h4>
 <p>The EmTrak sends the following GNSS information to the Navigation system:</p>
@@ -141,12 +158,27 @@
 </section>
 <section id="standard-horizon-vhf">
 <h3>Standard Horizon VHF<a class="headerlink" href="#standard-horizon-vhf" title="Link to this heading">¶</a></h3>
+<p><em>Insert Image</em></p>
+<p>The Standard Horizon VHF uses the GPS signal from the EmTrack AIS unit. The location and time are shown on the front panel LCD of the VHF unit - these are required to make the DSC emergency calling system work.</p>
+<p>(The VHF has an in-built VHF too, this is switched off as having multiple GPS locations being added to the network was one of the causes of issues seen in the first season)</p>
+<p>The Standard Horizon also sends the location of emergency alerts received to the network so they can be viewed on the OpenCPN chart plotting software.</p>
+</section>
+<section id="raspberrypi">
+<h3>RaspberryPi<a class="headerlink" href="#raspberrypi" title="Link to this heading">¶</a></h3>
+<p><em>Insert Image</em></p>
+<p>The RaspberryPi is the heart of the Navigation System.  It is a small, but fully functional, computer system that runs a free specialist operating system called OpenPlotter.  Originally designed for school students to be able to own a small, cheap computer - they’re now used in many industrial settings.</p>
+<p>In adition to the main computer board, we have added two other specialist boards to the system (known as HATs).</p>
+<ul class="simple">
+<li><p>MacArthur HAT - a specialist board produced by the company that creates OpenPlotter - it has inputs and outputs for NMEA 0183, NMEA 2000, NMEA OneNet, SeaTalk etc. plus the ability to interface to industrial sensors.  The HAT also allows a safe shutdown of the computer board and has 2 sensors - environmental conditions in the cabin and a 9 degrees of freedom orientation sensor.</p></li>
+<li><p>SSD Hard Disk board - to allow us to run the software from a proper hard disk, not an SD card.</p></li>
+</ul>
 </section>
 <section id="open-plotter">
 <h3>Open Plotter<a class="headerlink" href="#open-plotter" title="Link to this heading">¶</a></h3>
-<section id="raspberrypi">
-<h4>RaspberryPi<a class="headerlink" href="#raspberrypi" title="Link to this heading">¶</a></h4>
-</section>
+<p>OpenPlotter is a Linux-based operating system designed to use a cheap RaspberryPi computer and convert it in to a fully functional plotter system.  It uses almost exclusively free, open source, community projects - which means it’s fully tested by a large community, there’s a number of projects around the world which maintain it and increase functionality and there’s a method to request changes.</p>
+<p>OpenPlotter provides an interface to all of the standard data formats used by yacht hardware and a number of those used for industrial sensors.</p>
+<p>The measured and computed data is collated in a central database by a software package called SignalK, which then makes the values available to other software packages (such as the chart plotter) and over the network for crew to use on their tablets.</p>
+<p>OpenPlotter also provides a software chartplotter, weather prediction software, interfaces for autohelms, internet browsing, video viewing and an interface for a range of radio communications (at present we haven’t implemented the radio communications module on Ariel)</p>
 <section id="signalk">
 <h4>SignalK<a class="headerlink" href="#signalk" title="Link to this heading">¶</a></h4>
 <p>SignalK is software designed to import data from a variety of sources around the boat and stores it in a central database which can be accessed by other software.  On Ariel, the SignalK servier takes data from a range of inputs such as the NMEA 0143 bus used by the TackTicks and EmTrak, from the barometer and thermometer in the navigation locker and software modules running on the Raspberry Pi and imports them in to the database.  SignalK also stores a range of static data in this database which can be used in calculations, e.g. vessel draught.</p>
@@ -158,10 +190,26 @@
 </section>
 <section id="opencpn">
 <h4>OpenCPN<a class="headerlink" href="#opencpn" title="Link to this heading">¶</a></h4>
+<p><em>Insert Image</em></p>
+<p>OpenCPN is a fully functional chartplotter which can:</p>
+<ul class="simple">
+<li><p>Display a wide range of chart formats including those made available for Europe via O-charts</p></li>
+<li><p>Be used for all electronic chartplotter tasks such as adding routes, waypoints etc</p></li>
+<li><p>Can display the location of emergency alarm signals such as MOB alarms, DSC safety messages etc.</p></li>
+<li><p>Can display AIS targets including closest point of approach lines.</p></li>
+<li><p>Can overlay GRIB weather prediction files</p></li>
+<li><p>Can display tidal heights and currents, magnetic offsets etc.</p></li>
+<li><p>Can display Radar overlays.</p></li>
+<li><p>Can be extended by plugins to do tasks such as Vessel Data Recording.</p></li>
+</ul>
+<blockquote>
+<div><p>NOTE: OpenCPN is freely available on Windows, Mac, Linux and Android - please download and familiarise yourself - the charts for the entirety of the UK are also available for about £20.</p>
+</div></blockquote>
 <section id="o-charts">
 <h5>O-Charts<a class="headerlink" href="#o-charts" title="Link to this heading">¶</a></h5>
-<p><img alt="Micronet" src="_images/ocharts-uk.jpg"/></p>
+<p><img alt="O Charts UK Overview" src="_images/ocharts-uk.jpg"/></p>
 <p><a class="reference external" href="https://www.o-charts.org/">O-charts</a> use the latest information from a number of European hydrographic offices to create chart packages specifically designed for OpenCPN.  Each purchase is licensed to a USB key that is plugged in to the Raspberry Pi.</p>
+<p>The visual design of the charts is fully cusomisable - we have made it look like an Admiralty chart on Ariel - please note that you may need to zoom in on the chart to see all of the information present.</p>
 <blockquote>
 <div><p>NOTE: without the USB key, the charts will not be displayed.</p>
 </div></blockquote>
@@ -169,10 +217,21 @@
 </section>
 <section id="mob-and-safety-notifications">
 <h5>MOB and Safety Notifications<a class="headerlink" href="#mob-and-safety-notifications" title="Link to this heading">¶</a></h5>
+<p>MOB alarms work in a number of different ways.  If members wish to use a DSC based MOB alarm <em>the wearer must register the vessel MMSI number with the device</em>.  This is usually done via an smart phone app.</p>
+<p>The location of MOB and Safery alerts are shown on the chart surrounded by a flashing ragged ‘circle’ and an alarm is sounded.</p>
+<p><em>Insert Image</em></p>
 </section>
 </section>
 <section id="dashboard">
 <h4>Dashboard<a class="headerlink" href="#dashboard" title="Link to this heading">¶</a></h4>
+<p>OpenPlotter provides a web-based Dashboard for displaying information stored within the SignalK database.  This uses software called KIP.  This is accessed using a web browser.</p>
+<p>The dashboard has a number of pages:</p>
+<ul class="simple">
+<li><p>Sailing data overview - windrose, wind speed, speed, heading, COG, SOG etc.</p></li>
+<li><p>Location data - location, local time, sunrise and sunset times at this location</p></li>
+<li><p>Boat data - engine hours, battery status etc.</p></li>
+</ul>
+<p><em>Insert Image</em></p>
 </section>
 </section>
 <section id="custom-software">
@@ -197,8 +256,13 @@
 </section>
 <section id="future-projects">
 <h3>Future Projects<a class="headerlink" href="#future-projects" title="Link to this heading">¶</a></h3>
-<section id="better-data-dashboard">
-<h4>Better Data Dashboard<a class="headerlink" href="#better-data-dashboard" title="Link to this heading">¶</a></h4>
+<section id="better-data-dashboard-access">
+<h4>Better Data Dashboard Access<a class="headerlink" href="#better-data-dashboard-access" title="Link to this heading">¶</a></h4>
+<p>At present the dashboard is only available on the Raspberry Pi at the chart table via a web browser which competes for screen real-estate with the chartplotter.  The boatswain’s team has ideas for two projects in the run up to the new season:</p>
+<ul class="simple">
+<li><p>Make the KIP dashboard viewable on the local Ariel of Hamble network so that the dashboard can be viewed on a tablet or phone in the cockpit.</p></li>
+<li><p>Make a small, basic repeater that can be installed near the Raspberry Pi monitor showing only the most important data.</p></li>
+</ul>
 </section>
 <section id="shutdown-information">
 <h4>Shutdown Information<a class="headerlink" href="#shutdown-information" title="Link to this heading">¶</a></h4>
@@ -206,9 +270,19 @@
 </section>
 <section id="better-engine-information">
 <h4>Better Engine Information<a class="headerlink" href="#better-engine-information" title="Link to this heading">¶</a></h4>
+<p>There is an open source project based on OpenPlotter to interface to a Volvo Penta engine and send data such as RPM, temperature, etc. to the navigation network.</p>
 </section>
 <section id="better-battery-information">
 <h4>Better Battery Information<a class="headerlink" href="#better-battery-information" title="Link to this heading">¶</a></h4>
+<p>There have been some reports of batteries misbehaving, so we’re planning on adding battery monitors to both the Engine and House battery banks that will allow us to measure the battery voltage, provide this to the navigation network and graphically interpret the data so we can see if what correlation there is between voltage drop and equipment usage onboard.</p>
+<blockquote>
+<div><p>To quote the Commodore’s near namesake, William Thomson, Baron Kelvin: <em>“When you can measure what you are speaking about, and express it in numbers, you know something about it; but when you cannot measure it, when you cannot express it in numbers, your knowledge is of a meagre and unsatisfactory kind.”</em></p>
+</div></blockquote>
+</section>
+<section id="simplify-system-wifi-for-crew">
+<h4>Simplify system WiFi for crew<a class="headerlink" href="#simplify-system-wifi-for-crew" title="Link to this heading">¶</a></h4>
+<p>At present, both the EmTrak AIS and the boat’s internet router have wireless access points - so there are 2 Ariel networks.</p>
+<p>The optimal is to use only the boat router - this gives crew handheld device software such as Navionics access to data such as depth, wind speed and to safety alarms such as local MOB transmissions.</p>
 </section>
 </section>
 </section>
@@ -281,11 +355,15 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>0.2</p></td>
+<tr class="row-even"><td><p>0.3</p></td>
+<td><p><em>Technical Overview</em> Added an overview of the navigation hardware, sensors and software used on Ariel of Hamble</p></td>
+<td><p>22/01/26</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.2</p></td>
 <td><p><em>Automated PDF creation</em> Set up creation of PDF using Sphinx SimplePDF</p></td>
 <td><p>21/01/26</p></td>
 </tr>
-<tr class="row-odd"><td><p>0.1</p></td>
+<tr class="row-even"><td><p>0.1</p></td>
 <td><p><em>Automated webpage creation</em> Set up publishing to GitHub pages using Sphinx to convert from Markdown to HTML</p></td>
 <td><p>21/01/26</p></td>
 </tr>
