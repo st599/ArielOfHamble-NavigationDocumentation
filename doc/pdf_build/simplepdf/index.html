@@ -50,7 +50,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#emtrak-ais">EmTrak AIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#standard-horizon-vhf">Standard Horizon VHF</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#raspberrypi">RaspberryPi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#open-plotter">Open Plotter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#openplotter">OpenPlotter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#custom-software">Custom Software</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#future-projects">Future Projects</a></li>
 </ul>
@@ -70,7 +70,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/other_openplotter_software#screenshot">Screenshot</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#document-pages/shutdown">Switching Off the Navigation System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/shutdown">Shutting Down the Navigation System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/troubleshooting">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/reporting_fault">Reporting a Fault</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/update_list">Update List</a></li>
@@ -129,8 +129,8 @@
 <p>The EmTrak AIS is a multipurpose device.  It is the vessel’s source of location data, it is an AIS class B+ transceiver, sending the boat’s location to other vessels and, when in range, shore stations, it receives the locations of other vessels and it has an inbuilt switch connecting both the internal AIS and the VHF to the mast-head antenna.</p>
 <p>To prevent the VHF being powered on and transmitting in to a switched off AIS unit, both the EmTrak and VHF are on the same power switch “VHF”.</p>
 <p>The EmTrak AIS uses the GPS antenna on the stern railing.</p>
-<section id="gps-information">
-<h4>GPS Information<a class="headerlink" href="#gps-information" title="Link to this heading">¶</a></h4>
+<section id="gnss-information">
+<h4>GNSS Information<a class="headerlink" href="#gnss-information" title="Link to this heading">¶</a></h4>
 <p>The EmTrak sends the following GNSS information to the Navigation system:</p>
 <ul class="simple">
 <li><p>Location</p></li>
@@ -141,7 +141,7 @@
 <li><p>Precision</p></li>
 </ul>
 <blockquote>
-<div><p>NOTE: The EmTrak unit uses the US GPS, EU Galileo, Russian Glonass and Chinese Beidou locations satellites.</p>
+<div><p>NOTE: The EmTrak unit uses the US GPS, EU Galileo, Russian Glonass and Chinese Beidou GNSS satellites.</p>
 </div></blockquote>
 </section>
 <section id="ais-targets">
@@ -174,8 +174,8 @@
 <li><p>SSD Hard Disk board - to allow us to run the software from a proper hard disk, not an SD card.</p></li>
 </ul>
 </section>
-<section id="open-plotter">
-<h3>Open Plotter<a class="headerlink" href="#open-plotter" title="Link to this heading">¶</a></h3>
+<section id="openplotter">
+<h3>OpenPlotter<a class="headerlink" href="#openplotter" title="Link to this heading">¶</a></h3>
 <p>OpenPlotter is a Linux-based operating system designed to use a cheap RaspberryPi computer and convert it in to a fully functional plotter system.  It uses almost exclusively free, open source, community projects - which means it’s fully tested by a large community, there’s a number of projects around the world which maintain it and increase functionality and there’s a method to request changes.</p>
 <p>OpenPlotter provides an interface to all of the standard data formats used by yacht hardware and a number of those used for industrial sensors.</p>
 <p>The measured and computed data is collated in a central database by a software package called SignalK, which then makes the values available to other software packages (such as the chart plotter) and over the network for crew to use on their tablets.</p>
@@ -329,8 +329,8 @@
 <h3>Screenshot<a class="headerlink" href="#screenshot" title="Link to this heading">¶</a></h3>
 </section>
 </section>
-<span id="document-pages/shutdown"></span><section id="switching-off-the-navigation-system">
-<h2>Switching Off the Navigation System<a class="headerlink" href="#switching-off-the-navigation-system" title="Link to this heading">¶</a></h2>
+<span id="document-pages/shutdown"></span><section id="shutting-down-the-navigation-system">
+<h2>Shutting Down the Navigation System<a class="headerlink" href="#shutting-down-the-navigation-system" title="Link to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>The TackTick Instruments are shut off by switching off one unit, the others receive a command to shut down.</p></li>
 <li><p>Turn off the VHF Switch on the Switch Panel.</p></li>
