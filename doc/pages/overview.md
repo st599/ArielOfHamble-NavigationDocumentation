@@ -86,13 +86,19 @@ The RaspberryPi is the heart of the Navigation System.  It is a small, but fully
 
 In adition to the main computer board, we have added two other specialist boards to the system (known as HATs).
 
-* MacArthur HAT - a specialist board produced by the company that creates OpenPlotter - it has inputs and outputs for NMEA 0183, NMEA 2000, NMEA OneNet, plus the ability to interface to industrial sensors.  The HAT also allows a safe shutdown of the computer board and has 2 sensors - environmental conditions in the cabin and a 9 degrees of freedom orientation sensor.
+* MacArthur HAT - a specialist board produced by the company that creates OpenPlotter - it has inputs and outputs for NMEA 0183, NMEA 2000, NMEA OneNet, SeaTalk etc. plus the ability to interface to industrial sensors.  The HAT also allows a safe shutdown of the computer board and has 2 sensors - environmental conditions in the cabin and a 9 degrees of freedom orientation sensor.
 
 * SSD Hard Disk board - to allow us to run the software from a proper hard disk, not an SD card.
 
 ## Open Plotter
 
-OpenPlotter is a Linux-based operating system designed to use a cheap RaspberryPi computer and convert it in to a fully functional
+OpenPlotter is a Linux-based operating system designed to use a cheap RaspberryPi computer and convert it in to a fully functional plotter system.  It uses almost exclusively free, open source, community projects - which means it's fully tested by a large community, there's a number of projects around the world which maintain it and increase functionality and there's a method to request changes.
+
+OpenPlotter provides an interface to all of the standard data formats used by yacht hardware and a number of those used for industrial sensors.
+
+The measured and computed data is collated in a central database by a software package called SignalK, which then makes the values available to other software packages (such as the chart plotter) and over the network for crew to use on their tablets.
+
+OpenPlotter also provides a software chartplotter, weather prediction software, interfaces for autohelms, internet browsing, video viewing and an interface for a range of radio communications (at present we haven't implemented the radio communications module on Ariel)
 
 ### SignalK
 
@@ -110,17 +116,40 @@ Further details on SignalK can be found at [SignalK Website](https://signalk.org
 
 ### OpenCPN
 
+*Insert Image*
+
+OpenCPN is a fully functional chartplotter which can:
+
+* Display a wide range of chart formats including those made available for Europe via O-charts
+* Be used for all electronic chartplotter tasks such as adding routes, waypoints etc
+* Can display the location of emergency alarm signals such as MOB alarms, DSC safety messages etc.
+* Can display AIS targets including closest point of approach lines.
+* Can overlay GRIB weather prediction files
+* Can display tidal heights and currents, magnetic offsets etc.
+* Can display Radar overlays.
+* Can be extended by plugins to do tasks such as Vessel Data Recording.
+
+> NOTE: OpenCPN is freely available on Windows, Mac, Linux and Android - please download and familiarise yourself - the charts for the entirety of the UK are also available for about £20.
+
 #### O-Charts
 
 ![O Charts UK Overview](../assets/images/ocharts-uk.jpg)
 
 [O-charts](https://www.o-charts.org/) use the latest information from a number of European hydrographic offices to create chart packages specifically designed for OpenCPN.  Each purchase is licensed to a USB key that is plugged in to the Raspberry Pi. 
 
+The visual design of the charts is fully cusomisable - we have made it look like an Admiralty chart on Ariel - please note that you may need to zoom in on the chart to see all of the information present.
+
 > NOTE: without the USB key, the charts will not be displayed.
 
 Each year we purchase the entire UK chart set plus any required for the summer cruise, e.g. Atlantic France.  If you are planning on sailing anywhere that could require new charts, please contact the Commodore.  Charts can be installed remotely.  Charts receive updates every four weeks - again updates can be run remotely.
 
 #### MOB and Safety Notifications
+
+MOB alarms work in a number of different ways.  If members wish to use a DSC based MOB alarm *the wearer must register the vessel MMSI number with the device*.  This is usually done via an smart phone app.
+
+The location of MOB and Safery alerts are shown on the chart surrounded by a flashing ragged 'circle' and an alarm is sounded. 
+
+*Insert Image*
 
 ### Dashboard
 
