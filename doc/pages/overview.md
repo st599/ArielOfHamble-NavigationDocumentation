@@ -153,6 +153,16 @@ The location of MOB and Safery alerts are shown on the chart surrounded by a fla
 
 ### Dashboard
 
+OpenPlotter provides a web-based Dashboard for displaying information stored within the SignalK database.  This uses software called KIP.  This is accessed using a web browser.
+
+The dashboard has a number of pages:
+
+* Sailing data overview - windrose, wind speed, speed, heading, COG, SOG etc.
+* Location data - location, local time, sunrise and sunset times at this location
+* Boat data - engine hours, battery status etc.
+
+*Insert Image*
+
 ## Custom Software
 
 Our custom software uses a number of tools that are built in to the Raspberry Pi's operating system.  The majority use a service called `cron` which runs a specific programme at a specific time.
@@ -175,7 +185,7 @@ The sunset notification lets us know that the navigation system is running at su
 
 ## Future Projects
 
-### Better Data Dashboard
+### Better Data Dashboard Access
 
 ### Shutdown Information
 
