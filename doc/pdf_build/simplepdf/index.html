@@ -179,6 +179,7 @@
 <p>OpenPlotter provides an interface to all of the standard data formats used by yacht hardware and a number of those used for industrial sensors.</p>
 <p>The measured and computed data is collated in a central database by a software package called SignalK, which then makes the values available to other software packages (such as the chart plotter) and over the network for crew to use on their tablets.</p>
 <p>OpenPlotter also provides a software chartplotter, weather prediction software, interfaces for autohelms, internet browsing, video viewing and an interface for a range of radio communications (at present we haven’t implemented the radio communications module on Ariel)</p>
+<p>Further details on OpenPlotter can be found at the <a class="reference external" href="https://openmarine.net/openplotter">OpenPlotter Website</a>.</p>
 <section id="signalk">
 <h4>SignalK<a class="headerlink" href="#signalk" title="Link to this heading">¶</a></h4>
 <p>SignalK is software designed to import data from a variety of sources around the boat and stores it in a central database which can be accessed by other software.  On Ariel, the SignalK servier takes data from a range of inputs such as the NMEA 0143 bus used by the TackTicks and EmTrak, from the barometer and thermometer in the navigation locker and software modules running on the Raspberry Pi and imports them in to the database.  SignalK also stores a range of static data in this database which can be used in calculations, e.g. vessel draught.</p>
@@ -186,7 +187,7 @@
 <p><code class="docutils literal notranslate"><span class="pre">/vessels/&lt;mmsi&gt;/environment/windSpeedTrue</span> <span class="pre">4.23</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">/vessels/&lt;mmsi&gt;/navigation/position</span> <span class="pre">51.23453,-0.12248,2.34</span></code></p>
 <p>This database is available to other software to read from - the plotter software, OpenCPN, receives all of its locations details, AIS vessels to overlay, DSC alerts directly from the SignalK database.  SignalK also has a number of output plugins so the data is converted back to NMEA 0143 so derived values can be displayed on the TackTicks, to a data stream that can be used by Navionics or similar on member’s phones and tablets and in some cases to files so that trends can be observed (e.g. we’re actively monitoring battery state to see if we can understand better what is causing mysterious battery drainage).</p>
-<p>Further details on SignalK can be found at <a class="reference external" href="https://signalk.org/">SignalK Website</a></p>
+<p>Further details on SignalK can be found at <a class="reference external" href="https://signalk.org/">SignalK Website</a>.</p>
 </section>
 <section id="opencpn">
 <h4>OpenCPN<a class="headerlink" href="#opencpn" title="Link to this heading">¶</a></h4>
@@ -202,6 +203,7 @@
 <li><p>Can display Radar overlays.</p></li>
 <li><p>Can be extended by plugins to do tasks such as Vessel Data Recording.</p></li>
 </ul>
+<p>Further details on OpenCPN can be found at <a class="reference external" href="https://www.opencpn.org/">OpenCPN Website</a></p>
 <blockquote>
 <div><p>NOTE: OpenCPN is freely available on Windows, Mac, Linux and Android - please download and familiarise yourself - the charts for the entirety of the UK are also available for about £20.</p>
 </div></blockquote>
