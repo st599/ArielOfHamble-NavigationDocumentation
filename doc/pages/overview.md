@@ -1,5 +1,7 @@
 # Navigation Overview
 
+![Ariel Navigating the Kiel Canal](../assets/images/aoh.jpg)
+
 This is an overview of the software and hardware used for Ariel of Hamble's Navigation.
 
 > NOTE: Please be aware that some information is measured and some is derived from those measurements.  For example, Apparent Wind Speed (AWS) is measured and True Wind Speed (TWS) is calculated from AWS and Speed Through the Water (STW).  A problem with a measured value will cause knock-on issues with values derived from it.
@@ -24,7 +26,7 @@ The Wind Speed and Direction unit at the top of the mast is solar powered.  It t
 
 The EmTrak AIS is a multipurpose device.  It is the vessel's source of location data, it is an AIS class B+ transceiver, sending the boat's location to other vessels and, when in range, shore stations, it receives the locations of other vessels and it has an inbuilt switch connecting both the internal AIS and the VHF to the mast-head antenna.
 
-To prevent the VHF being powered on and transmitting in to a switched off AIS unit, both the EmTrak and VHF are on the same power switch "VHF".  Please switch on "VHF", wait until it acquires a position and displays it on the VHF front panel and then switch on the "Navigation" switch.
+To prevent the VHF being powered on and transmitting in to a switched off AIS unit, both the EmTrak and VHF are on the same power switch "VHF".  
 
 ### GPS Information
 
@@ -76,7 +78,7 @@ Further details on SignalK can be found at [SignalK Website](https://signalk.org
 
 #### O-Charts
 
-![Micronet](../assets/images/ocharts-uk.jpg)
+![O Charts UK Overview](../assets/images/ocharts-uk.jpg)
 
 [O-charts](https://www.o-charts.org/) use the latest information from a number of European hydrographic offices to create chart packages specifically designed for OpenCPN.  Each purchase is licensed to a USB key that is plugged in to the Raspberry Pi. 
 
