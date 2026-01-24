@@ -44,6 +44,8 @@ The EmTrak AIS is a multipurpose device.  It is the vessel's source of location 
 
 To prevent the VHF being powered on and transmitting in to a switched off AIS unit, both the EmTrak and VHF are on the same power switch "VHF".  
 
+The EmTrak AIS uses the GPS antenna on the stern railing.
+
 ### GPS Information
 
 The EmTrak sends the following GNSS information to the Navigation system:
