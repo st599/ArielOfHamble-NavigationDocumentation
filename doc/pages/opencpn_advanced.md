@@ -41,6 +41,7 @@ Data available on the connection includes:
 * Heading and COG
 * Depth
 * AIS vessels
+* Waypoint data (range, bearing etc.)
 * DSC Emergency message locations
 
 The WiFi access point has a 5G mobile data connection to allow the plotter to download chart updates, weather data and tidal data and to allow remote access.  It is not to be used for generic web browsing. *PLEASE ENSURE YOU DISCONNECT FROM THE WIFI BEFORE BROWSING THE WEB*
