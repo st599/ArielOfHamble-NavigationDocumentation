@@ -30,3 +30,26 @@ To update charts in the Open CPN plotter, click on the settings icon (a cog) in 
 
 8. Finally, Click "Apply" at the bottom of the Options dialogue box, wait for the charts to be applied and then click "Ok".
 
+## Connecting to Navigation Data via WiFi
+
+A data connection can be established with the plotter to receive data on a mobile device.
+
+Data available on the connection includes:
+
+* Location
+* Speed and SOG
+* Heading and COG
+* Depth
+* AIS vessels
+* DSC Emergency message locations
+
+The WiFi access point has a 5G mobile data connection to allow the plotter to download chart updates, weather data and tidal data and to allow remote access.  It is not to be used for generic web browsing. *PLEASE ENSURE YOU DISCONNECT FROM THE WIFI BEFORE BROWSING THE WEB*
+
+To connect to the data stream:
+
+| Data Item    | Value |
+| -------- | ------- |
+| WiFi Access Point SSID  | Ariel TP    |
+| WiFi Access Point Password | bbcYC2025     |
+| Data Source    | 192.168.1.105    |
+| Port  | 10110 |
