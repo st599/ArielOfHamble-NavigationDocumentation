@@ -58,12 +58,18 @@
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/booting">Starting the Navigation System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/opencpn_basic">Basic Use of OpenCPN Plotter</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#interface-overview">Interface Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#chart-display-options">Chart Display Options</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#zooming-and-panning">Zooming and Panning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#getting-information-on-chart-item">Getting Information on Chart Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#adding-waypoints">Adding Waypoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#creating-and-activating-a-route">Creating and Activating a Route</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#managing-routes-tracks-and-waypoints">Managing Routes, Tracks and Waypoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#course-up-mode">Course-up Mode</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/opencpn_advanced">Advanced Use of OpenCPN</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_advanced#updating-charts">Updating Charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_advanced#connecting-to-navigation-data-via-wifi">Connecting to Navigation Data via WiFi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/data_dashboard">Data Dashboard</a></li>
@@ -306,15 +312,46 @@
 <h2>Basic Use of OpenCPN Plotter<a class="headerlink" href="#basic-use-of-opencpn-plotter" title="Link to this heading">¶</a></h2>
 <section id="interface-overview">
 <h3>Interface Overview<a class="headerlink" href="#interface-overview" title="Link to this heading">¶</a></h3>
+<p>OpenCPN is an open source chartplotter maintained and improved by a large community of world-wide users.  It is freely available to download and we encourage club members to download and run it locally to allow them to practice how it is used and to allow them to plan routes, waypoints etc. in advance.</p>
+<p>This is a graphic of the main interface:</p>
 <p><img alt="Open CPN Overview" src="_images/overview.png"/></p>
 <p>The large text “Metres” identifies the units used in the soundings depths shown on the chart.</p>
-<p><img alt="Open CPN Overview" src="_images/course-up.png"/></p>
+<p>In the top right corner, there is a satellite signal strength indicator showing the reliability of the position data, and an icon which informs if the plotter is in North up or Course up mode.</p>
+<p>In the bottom right corner are the zoom controls of the chart, a button to pan the chart so Ariel is at the centre (boat with green dot) and a button to bring up the chart display options.</p>
+<p>At the bottom left of the display, there are a number of green bars - these represent the charts that cover the area displayed.  The chart plotter blends data from a number of charts to best show required data.  This is known as “Chart-Quilting”.  The charts used will change as you zoom in and out and as you pan or change the chart settings.  In this example 3 of the 6 charts are being used in the display.  <em>Please leave chart-quilting enabled - we have set the chart detail level to what we believe is a very useful compromise - readable on a 14” screen, showing all hazards and most depth soundings.</em></p>
+<p>In the top left corner is the menu bar.  The top icon expands and contracts the menu.</p>
+<p>The second icon opens the Options menu.  <em>Please do not change anything in the options menu.</em></p>
+<p>The third icon allows you to create a route.</p>
+<p>The fourth icon opens the routes, tracks and waypoints manager, allowing you to name routes, add organise waypoints, import routes and waypoints from file etc.</p>
+<p>The fifth icon toggles track recording on and off.</p>
+<p>The sixth icon toggles between daytime, dusk and nighttime colour schemes.</p>
+<p>The seventh icon opens the help dialogue.</p>
+<p>The eigth icon allows the user to download and view UK tidal data.</p>
+<p>The ninth icon opens an AIS Radar so you can see AIS targets without the distraction of the chart items.</p>
+<p>The final icon will drop a MOB waypoint.</p>
+</section>
+<section id="chart-display-options">
+<h3>Chart Display Options<a class="headerlink" href="#chart-display-options" title="Link to this heading">¶</a></h3>
+<p><img alt="Open CPN Overview" src="_images/Chart-options.png"/></p>
 </section>
 <section id="zooming-and-panning">
 <h3>Zooming and Panning<a class="headerlink" href="#zooming-and-panning" title="Link to this heading">¶</a></h3>
 </section>
 <section id="getting-information-on-chart-item">
 <h3>Getting Information on Chart Item<a class="headerlink" href="#getting-information-on-chart-item" title="Link to this heading">¶</a></h3>
+</section>
+<section id="adding-waypoints">
+<h3>Adding Waypoints<a class="headerlink" href="#adding-waypoints" title="Link to this heading">¶</a></h3>
+</section>
+<section id="creating-and-activating-a-route">
+<h3>Creating and Activating a Route<a class="headerlink" href="#creating-and-activating-a-route" title="Link to this heading">¶</a></h3>
+</section>
+<section id="managing-routes-tracks-and-waypoints">
+<h3>Managing Routes, Tracks and Waypoints<a class="headerlink" href="#managing-routes-tracks-and-waypoints" title="Link to this heading">¶</a></h3>
+</section>
+<section id="course-up-mode">
+<h3>Course-up Mode<a class="headerlink" href="#course-up-mode" title="Link to this heading">¶</a></h3>
+<p><img alt="Open CPN Overview" src="_images/course-up.png"/></p>
 </section>
 </section>
 <span id="document-pages/opencpn_advanced"></span><section id="advanced-use-of-opencpn">
@@ -342,6 +379,43 @@
 <li><p>Once all chart packs have had their downloads stored on the plotter, click on the “Chart Files” option on the second row of options, then click “Prepare all ENC Charts”</p></li>
 <li><p>Finally, Click “Apply” at the bottom of the Options dialogue box, wait for the charts to be applied and then click “Ok”.</p></li>
 </ol>
+</section>
+<section id="connecting-to-navigation-data-via-wifi">
+<h3>Connecting to Navigation Data via WiFi<a class="headerlink" href="#connecting-to-navigation-data-via-wifi" title="Link to this heading">¶</a></h3>
+<p>A data connection can be established with the plotter to receive data on a mobile device.</p>
+<p>Data available on the connection includes:</p>
+<ul class="simple">
+<li><p>Location</p></li>
+<li><p>Speed and SOG</p></li>
+<li><p>Heading and COG</p></li>
+<li><p>Depth</p></li>
+<li><p>AIS vessels</p></li>
+<li><p>Waypoint data (range, bearing etc.)</p></li>
+<li><p>DSC Emergency message locations</p></li>
+</ul>
+<p>The WiFi access point has a 5G mobile data connection to allow the plotter to download chart updates, weather data and tidal data and to allow remote access.  It is not to be used for generic web browsing. <em>PLEASE ENSURE YOU DISCONNECT FROM THE WIFI BEFORE BROWSING THE WEB</em></p>
+<p>To connect to the data stream:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Data Item</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>WiFi Access Point SSID</p></td>
+<td><p>Ariel TP</p></td>
+</tr>
+<tr class="row-odd"><td><p>WiFi Access Point Password</p></td>
+<td><p>bbcYC2025</p></td>
+</tr>
+<tr class="row-even"><td><p>Data Source</p></td>
+<td><p>192.168.1.105</p></td>
+</tr>
+<tr class="row-odd"><td><p>Port</p></td>
+<td><p>10110</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 <span id="document-pages/data_dashboard"></span><section id="data-dashboard">
