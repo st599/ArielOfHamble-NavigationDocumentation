@@ -2,6 +2,8 @@
 
 ## Accessing Tidal Data
 
+## AIS Radar Plots
+
 
 ## Updating Charts
 
@@ -55,3 +57,7 @@ To connect to the data stream:
 | WiFi Access Point Password | bbcYC2025     |
 | Data Source    | 192.168.1.105    |
 | Port  | 10110 |
+
+## KIP Dashboard
+
+

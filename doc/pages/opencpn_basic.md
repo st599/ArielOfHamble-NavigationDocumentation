@@ -44,6 +44,8 @@ The final icon will drop a MOB waypoint.
 
 ## Getting Information on Chart Item
 
+## Measuring Distance on Chart
+
 ## Adding Waypoints
 
 ## Creating and Activating a Route
@@ -53,5 +55,7 @@ The final icon will drop a MOB waypoint.
 ## Course-up Mode
 
 ![Open CPN Overview](../assets/images/course-up.png)
+
+## Showing AIS Targets
 
 
