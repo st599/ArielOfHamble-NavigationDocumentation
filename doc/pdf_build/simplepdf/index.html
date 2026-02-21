@@ -45,7 +45,11 @@
 <h3><a href="#">Table of Contents</a></h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="#document-pages/overview">Navigation Overview</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/overview">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#terms-and-definitions">Terms and Definitions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/overview#navigation-overview">Navigation Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#tackticks">TackTicks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#emtrak-ais">EmTrak AIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#standard-horizon-vhf">Standard Horizon VHF</a></li>
@@ -106,7 +110,28 @@
 <h1>Ariel of Hamble Navigation Documentation<a class="headerlink" href="#ariel-of-hamble-navigation-documentation" title="Link to this heading">¶</a></h1>
 <p>Please note - IP addresses and passwords are not present in this document as it is available on the public Internet.</p>
 <div class="toctree-wrapper compound">
-<span id="document-pages/overview"></span><section id="navigation-overview">
+<span id="document-pages/overview"></span><section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<section id="terms-and-definitions">
+<h3>Terms and Definitions<a class="headerlink" href="#terms-and-definitions" title="Link to this heading">¶</a></h3>
+<p>Measured Data
+: Data that can be directly measured from the boat’s systems.
+: E.g. Apparent Wind Speed, Location</p>
+<p>Derived Data
+: Data that needs to be derived from multiple data sources.
+: Examples include True Wind Speed (from Apparent Wind Speed, Speed and Heading), Sunset Time (from Location, Date and a Database).</p>
+<p>Open Standard
+: A specification that is published by a standards developing organisation and is available under fair, reasonable and non-discriminatory (FRAND) terms - this does not mean free.  This allows a number of organisations to make equipment that can interact with each other.
+: Examples include NMEA 0183, Ethernet</p>
+<p>Proprietary
+: A data format designed and used by one company for their products, not usually available under FRAND terms.  Any interaction with such a format usually requires a degree of reverse engineering.
+: Examples include SeaTalk, Micronet</p>
+<p>Open Source
+: Usually used for software to mean that it is available under a licence such as the GNU General Public Licence, which allow you to use, build upon, distribute, sell etc. provided you allow others to do the same.
+: Examples include the OpenCPN Plotter and SignalK data format and software.</p>
+</section>
+</section>
+<section id="navigation-overview">
 <h2>Navigation Overview<a class="headerlink" href="#navigation-overview" title="Link to this heading">¶</a></h2>
 <p>This is an overview of the software and hardware used for Ariel of Hamble’s Navigation.  The term navigation network is used to describe the network that is used to pass data between nodes around the boat, but in reality it is a number of networks.  Further data will be provided in a deep-dive section at a future date.</p>
 <blockquote>
