@@ -4,6 +4,7 @@
 
 ## AIS Radar Plots
 
+![AIS RADAR Plot](../assets/images/AIS-radar.png)
 
 ## Updating Charts
 
@@ -59,6 +60,13 @@ To connect to the data stream:
 | Port  | 10110 |
 
 ## KIP Dashboard
+
+### Initial Page
+![Initial KIP Page](../assets/images/KIP-dashboard1.png)
+
+![Second KIP Page](../assets/images/KIP-dashboard2.png)
+
+![Third KIP Page](../assets/images/KIP-Dashboard3.png)
 
 Ctrl + up or Ctrl + Down to change page
 
