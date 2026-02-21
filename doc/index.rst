@@ -12,6 +12,7 @@ Please note - IP addresses and passwords are not present in this document as it 
    :maxdepth: 2
    :caption: Contents:
 
+   pages/introduction.md
    pages/overview.md
    pages/booting.md
    pages/opencpn_basic.md

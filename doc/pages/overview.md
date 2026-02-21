@@ -1,31 +1,3 @@
-# Introduction
-
-
-## Terms and Definitions
-
-Measured Data
-: Data that can be directly measured from the boat's systems.
-: E.g. Apparent Wind Speed, Location
-
-Derived Data
-: Data that needs to be derived from multiple data sources.
-: Examples include True Wind Speed (from Apparent Wind Speed, Speed and Heading), Sunset Time (from Location, Date and a Database). 
-
-Open Standard 
-: A specification that is published by a standards developing organisation and is available under fair, reasonable and non-discriminatory (FRAND) terms - this does not mean free.  This allows a number of organisations to make equipment that can interact with each other.
-: Examples include NMEA 0183, Ethernet
-
-
-Proprietary
-: A data format designed and used by one company for their products, not usually available under FRAND terms.  Any interaction with such a format usually requires a degree of reverse engineering.
-: Examples include SeaTalk, Micronet
-
-
-Open Source
-: Usually used for software to mean that it is available under a licence such as the GNU General Public Licence, which allow you to use, build upon, distribute, sell etc. provided you allow others to do the same.
-: Examples include the OpenCPN Plotter and SignalK data format and software.
-
-
 # Navigation Overview
 
 This is an overview of the software and hardware used for Ariel of Hamble's Navigation.  The term navigation network is used to describe the network that is used to pass data between nodes around the boat, but in reality it is a number of networks.  Further data will be provided in a deep-dive section at a future date.
@@ -132,7 +104,7 @@ Further details on OpenPlotter can be found at the [OpenPlotter Website](https:/
 
 ### SignalK
 
-SignalK is software designed to import data from a variety of sources around the boat and stores it in a central database which can be accessed by other software.  On Ariel, the SignalK servier takes data from a range of inputs such as the NMEA 0143 bus used by the TackTicks and EmTrak, from the barometer and thermometer in the navigation locker and software modules running on the Raspberry Pi and imports them in to the database.  SignalK also stores a range of static data in this database which can be used in calculations, e.g. vessel draught.
+SignalK is software designed to import data from a variety of sources around the boat and store it in a central database which can be accessed by other software.  On Ariel, the SignalK servier takes data from a range of inputs such as the NMEA 0143 bus used by the TackTicks and EmTrak, from the barometer and thermometer in the navigation locker and software modules running on the Raspberry Pi and imports them in to the database.  SignalK also stores a range of static data in this database which can be used in calculations, e.g. vessel draught.
 
 SignalK stores data addresses and values, for example:
 
