@@ -13,6 +13,10 @@ For example, Apparent Wind Speed, Location
 Data that needs to be derived from multiple data sources.
 Examples include True Wind Speed (from Apparent Wind Speed, Speed and Heading), Sunset Time (from Location, Date and a Database). 
 
+> GNSS
+
+Global Navigation Satellite System, examples include GPS and Galileo.
+
 > Open Standard 
 
 A specification that is published by a standards developing organisation and is available under fair, reasonable and non-discriminatory (FRAND) terms - this does not mean free.  This allows a number of organisations to make equipment that can interact with each other.
