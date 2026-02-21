@@ -38,6 +38,8 @@ The final icon will drop a MOB waypoint.
 
 ## Chart Display Options 
 
+The chart display options can be accessed by clicking on the three horizontal bars on the menu bar on the bottom right of the screen, near the zoom buttons and the centre on boat button.
+
 ![Open CPN Overview](../assets/images/Chart-options.png)
 
 ## Zooming and Panning
@@ -50,7 +52,11 @@ Mouse wheel or + or - in bottom right
 
 Right Click on Item
 
+![Selection that appears after right clicking on chart item](../assets/images/Object-query1.png)
+
 Select Object query.
+
+![Object Query Data Box](../assets/images/ObjectQuery2.png)
 
 ## Measuring Distance on Chart
 
@@ -58,13 +64,16 @@ Right Click and select measure (or press letter M on keyboard.)
 
 Click at first point.  move mouse to second point and read distance and direction
 
+![Measuring a distance and direction on a char](../assets/images/Measure.png)
+
 ## Adding Waypoints
 
 ### Import a file
 
 mark manager
 
-
+![Importing a GPX File](../assets/images/import-gpx.png)
+![Importing a GPX File](../assets/images/import-gpx2.png)
 
 ### Via chart
 
@@ -75,6 +84,12 @@ To name, go to mark manager, hightlight, properties.
 ## Creating and Activating a Route
 
 Richt Click - New route
+
+![Creating a new route](../assets/images/create-route.png)
+
+![Creating a new route](../assets/images/create_route2.png)
+
+![Creating a new route](../assets/images/create-route3.png)
 
 click at each point on route
 
@@ -93,4 +108,8 @@ unnamed routes will be deleted.
 Switch on and off using the bottom right
 
 Right click on vessel icon AIS Target Query
+
+![AIS Target Query data box](../assets/images/AIS_query.png)
+
+NB there are two classes of AIS user, class A and class B.  Class B are smaller craft, like Ariel, and do not transmit the same level of detail as a class A user.
 
