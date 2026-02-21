@@ -42,13 +42,45 @@ The final icon will drop a MOB waypoint.
 
 ## Zooming and Panning
 
+Move to edge of chart, mouse pointer turns in to green triangle
+
+Mouse wheel or + or - in bottom right
+
 ## Getting Information on Chart Item
+
+Right Click on Item
+
+Select Object query.
 
 ## Measuring Distance on Chart
 
+Right Click and select measure (or press letter M on keyboard.)
+
+Click at first point.  move mouse to second point and read distance and direction
+
 ## Adding Waypoints
 
+### Import a file
+
+mark manager
+
+
+
+### Via chart
+
+Right Click Drop Mark
+
+To name, go to mark manager, hightlight, properties.
+
 ## Creating and Activating a Route
+
+Richt Click - New route
+
+click at each point on route
+
+Either, Right click on route and click activate, or open route manager, name route by clicking on properties and click activate
+
+unnamed routes will be deleted.
 
 ## Managing Routes, Tracks and Waypoints
 
@@ -58,4 +90,7 @@ The final icon will drop a MOB waypoint.
 
 ## Showing AIS Targets
 
+Switch on and off using the bottom right
+
+Right click on vessel icon AIS Target Query
 

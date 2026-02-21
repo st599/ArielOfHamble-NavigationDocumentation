@@ -60,4 +60,6 @@ To connect to the data stream:
 
 ## KIP Dashboard
 
+Ctrl + up or Ctrl + Down to change page
+
 
