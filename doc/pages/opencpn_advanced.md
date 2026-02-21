@@ -47,14 +47,14 @@ Data available on the connection includes:
 * Waypoint data (range, bearing etc.)
 * DSC Emergency message locations
 
-The WiFi access point has a 5G mobile data connection to allow the plotter to download chart updates, weather data and tidal data and to allow remote access.  It is not to be used for generic web browsing. *PLEASE ENSURE YOU DISCONNECT FROM THE WIFI BEFORE BROWSING THE WEB*
+The WiFi access point has a 4G mobile data connection to allow the plotter to download chart updates, weather data and tidal data and to allow remote access.  It is not to be used for generic web browsing. 
 
 To connect to the data stream:
 
 | Data Item    | Value |
 | -------- | ------- |
-| WiFi Access Point SSID  | Ariel TP    |
-| WiFi Access Point Password | bbcYC2025     |
+| WiFi Access Point SSID  | ariel_access    |
+| WiFi Access Point Password | gbr8633t     |
 | Data Source    | 192.168.1.105    |
 | Port  | 10110 |
 
