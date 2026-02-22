@@ -46,6 +46,7 @@
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/introduction">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/introduction#to-do">To Do</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/introduction#terms-and-definitions">Terms and Definitions</a></li>
 </ul>
 </li>
@@ -80,14 +81,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_advanced#kip-dashboard">KIP Dashboard</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#document-pages/data_dashboard">Data Dashboard</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#document-pages/data_dashboard#opening-the-data-dashboard">Opening the Data Dashboard</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#document-pages/data_dashboard#initial-view">Initial View</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#document-pages/data_dashboard#available-pages">Available Pages</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#document-pages/data_dashboard#changing-pages">Changing Pages</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#document-pages/other_openplotter_software">Other OpenPlotter Software</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/other_openplotter_software">Other Useful OpenPlotter Software</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/other_openplotter_software#xygrib">XyGrib</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/other_openplotter_software#vlc">VLC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/other_openplotter_software#screenshot">Screenshot</a></li>
@@ -96,7 +90,10 @@
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/shutdown">Shutting Down the Navigation System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/troubleshooting">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/reporting_fault">Reporting a Fault</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#document-pages/update_list">Update List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/update_list">Update List</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/update_list#major-chart-updates">Major Chart Updates</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -111,6 +108,17 @@
 <div class="toctree-wrapper compound">
 <span id="document-pages/introduction"></span><section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<section id="to-do">
+<h3>To Do<a class="headerlink" href="#to-do" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Photo of Pi</p></li>
+<li><p>Navigate to waypoint</p></li>
+<li><p>Tidal Data</p></li>
+<li><p>Importing from Navionics Boating App</p></li>
+<li><p>Fault Reporting</p></li>
+<li><p>Troubleshooting</p></li>
+</ul>
+</section>
 <section id="terms-and-definitions">
 <h3>Terms and Definitions<a class="headerlink" href="#terms-and-definitions" title="Link to this heading">¶</a></h3>
 <blockquote>
@@ -127,6 +135,14 @@ Examples include True Wind Speed (from Apparent Wind Speed, Speed and Heading), 
 <div><p>GNSS</p>
 </div></blockquote>
 <p>Global Navigation Satellite System, examples include GPS and Galileo.</p>
+<blockquote>
+<div><p>Speed</p>
+</div></blockquote>
+<p>How fast you’re moving in any direction.</p>
+<blockquote>
+<div><p>Velocity</p>
+</div></blockquote>
+<p>How fast you’re moving in relation to a specific direction.  Travel relative to North at a Speed of 5kts, then you’re velocity is 5kts.  Travel South - your speed is still 5kts but your velocity is -5kts.  Travel due East, your velocity is 0kts, even though your speed is 5kts.</p>
 <blockquote>
 <div><p>Open Standard</p>
 </div></blockquote>
@@ -527,31 +543,24 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 <p>Further information will be added to the screens as it becomes available.</p>
 </section>
 </section>
-<span id="document-pages/data_dashboard"></span><section id="data-dashboard">
-<h2>Data Dashboard<a class="headerlink" href="#data-dashboard" title="Link to this heading">¶</a></h2>
-<section id="opening-the-data-dashboard">
-<h3>Opening the Data Dashboard<a class="headerlink" href="#opening-the-data-dashboard" title="Link to this heading">¶</a></h3>
-</section>
-<section id="initial-view">
-<h3>Initial View<a class="headerlink" href="#initial-view" title="Link to this heading">¶</a></h3>
-</section>
-<section id="available-pages">
-<h3>Available Pages<a class="headerlink" href="#available-pages" title="Link to this heading">¶</a></h3>
-</section>
-<section id="changing-pages">
-<h3>Changing Pages<a class="headerlink" href="#changing-pages" title="Link to this heading">¶</a></h3>
-</section>
-</section>
-<span id="document-pages/other_openplotter_software"></span><section id="other-openplotter-software">
-<h2>Other OpenPlotter Software<a class="headerlink" href="#other-openplotter-software" title="Link to this heading">¶</a></h2>
+<span id="document-pages/other_openplotter_software"></span><section id="other-useful-openplotter-software">
+<h2>Other Useful OpenPlotter Software<a class="headerlink" href="#other-useful-openplotter-software" title="Link to this heading">¶</a></h2>
 <section id="xygrib">
 <h3>XyGrib<a class="headerlink" href="#xygrib" title="Link to this heading">¶</a></h3>
+<p>XyGrib is an open source software package designed to download and display weather forecast in a compressed format that doesn’t require much data.</p>
+<p><img alt="XyGrib Gridded Binary Weather Viewer" src="_images/xygrib-forecast.png"/></p>
+<p>To download data, use the mouse to click and drag a square over the area of interest and then click the download button on the icon bar (next to the Show Model Limits drop-down).  You’ll then be able to choose the model of interest (the EU model EMCWF is good for European waters) and the items you’re interested in (Temperature, Wind speed, Precipitation etc.)</p>
+<p>Once the file has downloaded, it will open.  You can use the left and right arrows on the icon bar to step forwards and backwards in time.  The Timeline is shown at the bottom of the screen.</p>
+<p>To change what the forecast pane is showing, use the Weather Map drop-down at the top of the page.  It will show which forecast elements are available in the downloaded file.</p>
 </section>
 <section id="vlc">
 <h3>VLC<a class="headerlink" href="#vlc" title="Link to this heading">¶</a></h3>
+<p>VideoLAN VLC is a video viewer.  It can play just about any video file.  If you open the VLC viewer and click Media and then open, you’ll get a file open dialogue and can choose a video to play.</p>
+<p><img alt="VideoLAN VLC" src="_images/vlc.png"/></p>
 </section>
 <section id="screenshot">
 <h3>Screenshot<a class="headerlink" href="#screenshot" title="Link to this heading">¶</a></h3>
+<p>The screenshot tool allows you to easily take a screenshot of the plotter, with a delay so you can get the mouse in to position.  This is incredibly useful if you’re asking for help from the boatswain’s team. (Unfortunately, I can’t take a screenshot of the screenshot app)</p>
 </section>
 </section>
 <span id="document-pages/shutdown"></span><section id="shutting-down-the-navigation-system">
@@ -599,28 +608,43 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>0.5</p></td>
+<tr class="row-even"><td><p>0.6</p></td>
+<td><p><em>Advanced usage</em> Added description of advanced use of the system and</p></td>
+<td><p>22/02/26</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.5</p></td>
 <td><p><em>Basic usage</em> Added description of basic use of the system</p></td>
 <td><p>22/02/26</p></td>
 </tr>
-<tr class="row-odd"><td><p>0.4</p></td>
+<tr class="row-even"><td><p>0.4</p></td>
 <td><p><em>Booting and Shutting Down</em> Added data on how to safely boot and shutdown the system</p></td>
 <td><p>22/01/26</p></td>
 </tr>
-<tr class="row-even"><td><p>0.3</p></td>
+<tr class="row-odd"><td><p>0.3</p></td>
 <td><p><em>Technical Overview</em> Added an overview of the navigation hardware, sensors and software used on Ariel of Hamble</p></td>
 <td><p>22/01/26</p></td>
 </tr>
-<tr class="row-odd"><td><p>0.2</p></td>
+<tr class="row-even"><td><p>0.2</p></td>
 <td><p><em>Automated PDF creation</em> Set up creation of PDF using Sphinx SimplePDF</p></td>
 <td><p>21/01/26</p></td>
 </tr>
-<tr class="row-even"><td><p>0.1</p></td>
+<tr class="row-odd"><td><p>0.1</p></td>
 <td><p><em>Automated webpage creation</em> Set up publishing to GitHub pages using Sphinx to convert from Markdown to HTML</p></td>
 <td><p>21/01/26</p></td>
 </tr>
 </tbody>
 </table>
+<section id="major-chart-updates">
+<h3>Major Chart Updates<a class="headerlink" href="#major-chart-updates" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Chart</p></th>
+<th class="head"><p>description</p></th>
+<th class="head"><p>date</p></th>
+</tr>
+</thead>
+</table>
+</section>
 </section>
 </div>
 </section>
