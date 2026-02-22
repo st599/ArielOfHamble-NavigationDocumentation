@@ -6,7 +6,7 @@ This is an overview of the software and hardware used for Ariel of Hamble's Navi
 
 ## TackTicks
 
-The TackTick instruments are used to generate depth, speed through the water, water temperature, apparent wind speed and direction.  The TackTick units use a proprietary radio network called [Raymarine Micronet](https://open-boat-projects.org/en/micronet/) to pass information between the units installed in the navigation cupboard, the wind sensor and the display units.
+The TackTick instruments are used to generate depth, speed through the water, water temperature, apparent wind speed and apparent wind direction.  The TackTick units use a proprietary radio network called [Raymarine Micronet](https://open-boat-projects.org/en/micronet/) to pass information between the units installed in the navigation cupboard, the wind sensor and the display units.
 
 ### Display Units
 
@@ -34,7 +34,7 @@ The speed transducer uses a paddle wheel to measure the speed of the boat throug
 
 ![Micronet](../assets/images/Micronet-768x464.png)
 
-The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called .  
+The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called MicroNet.  
 
 ## EmTrak AIS
 
@@ -187,6 +187,10 @@ The location notification checks if the boat is approaching a fixed location and
 
 The sunset notification lets us know that the navigation system is running at sunset, so we know that a night sail is taking place.
 
+### Shutdown Information
+
+The offsite notifier to send a set of data when the navigation system is shutdown.  This would be used for information important to planning maintenance and spotting early indications of issues.  In the initial rollout we're hoping to send engine hours, battery status and cabin humidity with a hope to add further information such as fridge minimum temperature, engine maximum temperature, bilge water level etc.
+
 ## Future Projects
 
 ### Better Data Dashboard Access
@@ -197,10 +201,6 @@ At present the dashboard is only available on the Raspberry Pi at the chart tabl
 
 * Make a small, basic repeater that can be installed near the Raspberry Pi monitor showing only the most important data.
 
-### Shutdown Information
-
-We are planning to use the offsite notifier to send a set of data when the navigation system is shutdown.  This would be used for information important to planning maintenance and spotting early indications of issues.  In the initial rollout we're hoping to send engine hours, battery status and cabin humidity with a hope to add further information such as fridge minimum temperature, engine maximum temperature, bilge water level etc.
-
 ### Better Engine Information
 
 There is an open source project based on OpenPlotter to interface to a Volvo Penta engine and send data such as RPM, temperature, etc. to the navigation network.
@@ -210,9 +210,3 @@ There is an open source project based on OpenPlotter to interface to a Volvo Pen
 There have been some reports of batteries misbehaving, so we're planning on adding battery monitors to both the Engine and House battery banks that will allow us to measure the battery voltage, provide this to the navigation network and graphically interpret the data so we can see if what correlation there is between voltage drop and equipment usage onboard.
 
 > To quote the Commodore's near namesake, William Thomson, Baron Kelvin: *"When you can measure what you are speaking about, and express it in numbers, you know something about it; but when you cannot measure it, when you cannot express it in numbers, your knowledge is of a meagre and unsatisfactory kind."*
-
-### Simplify system WiFi for crew
-
-At present, both the EmTrak AIS and the boat's internet router have wireless access points - so there are 2 Ariel networks.
-
-The optimal is to use only the boat router - this gives crew handheld device software such as Navionics access to data such as depth, wind speed and to safety alarms such as local MOB transmissions.
