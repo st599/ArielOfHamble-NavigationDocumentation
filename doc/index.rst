@@ -17,7 +17,6 @@ Please note - IP addresses and passwords are not present in this document as it 
    pages/booting.md
    pages/opencpn_basic.md
    pages/opencpn_advanced.md
-   pages/data_dashboard.md
    pages/other_openplotter_software.md
    pages/shutdown.md
    pages/troubleshooting.md

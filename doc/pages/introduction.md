@@ -1,6 +1,17 @@
 # Introduction
 
 
+## To Do
+
+* Photo of Pi
+* Navigate to waypoint
+* Tidal Data
+* Importing from Navionics Boating App
+* Fault Reporting
+* Troubleshooting
+
+
+
 ## Terms and Definitions
 
 > Measured Data
@@ -16,6 +27,14 @@ Examples include True Wind Speed (from Apparent Wind Speed, Speed and Heading), 
 > GNSS
 
 Global Navigation Satellite System, examples include GPS and Galileo.
+
+> Speed
+
+How fast you're moving in any direction.
+
+> Velocity
+
+How fast you're moving in relation to a specific direction.  Travel relative to North at a Speed of 5kts, then you're velocity is 5kts.  Travel South - your speed is still 5kts but your velocity is -5kts.  Travel due East, your velocity is 0kts, even though your speed is 5kts.
 
 > Open Standard 
 
