@@ -61,13 +61,17 @@ To connect to the data stream:
 
 ## KIP Dashboard
 
-### Initial Page
+The KIP dashboard runs on a web browser.  The browser should open automatically, if it doesn't, the blue globe logo on the top bar next to the Raspberry Pi logo will start the software.  Navigate to *IP address*.
+
+The initial page is useful for sailing, showing wind, speed, course etc.
+
 ![Initial KIP Page](../assets/images/KIP-dashboard1.png)
+
+Further pages are available.  To change between pages, use  the keyboard clicking Ctrl and Up arrow or Ctrl and Down arrow to change page.
 
 ![Second KIP Page](../assets/images/KIP-dashboard2.png)
 
 ![Third KIP Page](../assets/images/KIP-Dashboard3.png)
 
-Ctrl + up or Ctrl + Down to change page
-
+Further information will be added to the screens as it becomes available.
 
