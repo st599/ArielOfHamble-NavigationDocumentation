@@ -9,7 +9,7 @@
 project = 'Ariel of Hamble Navigation'
 copyright = 'BBCYC 2026'
 author = 'Simon Thompson'
-version = '0.5'
+version = '0.6'
 release = version
 
 # -- General configuration ---------------------------------------------------
