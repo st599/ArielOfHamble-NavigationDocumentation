@@ -4,10 +4,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Ariel of Hamble Navigation 0.4 documentation</title>
+<title>Ariel of Hamble Navigation 0.5 documentation</title>
 <link href="_static/pygments.css?v=d75fae25" rel="stylesheet" type="text/css"/>
 <link href="_static/main.css?v=9187bc91" rel="stylesheet" type="text/css"/>
-<script src="_static/documentation_options.js?v=d9a53d41"></script>
+<script src="_static/documentation_options.js?v=46e7a9db"></script>
 <script src="_static/doctools.js?v=fd6eb6e6"></script>
 <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
 <link href="genindex.html" rel="index" title="Index"/>
@@ -22,7 +22,7 @@
 <div class="cover-middle">
 <div class="title">
 <h1 class="title-cover">Ariel of Hamble Navigation</h1>
-<p class="subtitle-cover">Version 0.4</p>
+<p class="subtitle-cover">Version 0.5</p>
 <span class="meta">
 </span>
 </div>
@@ -66,9 +66,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#zooming-and-panning">Zooming and Panning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#getting-information-on-chart-item">Getting Information on Chart Item</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#measuring-distance-on-chart">Measuring Distance on Chart</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#adding-waypoints">Adding Waypoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#adding-waypoints-marks">Adding Waypoints/Marks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#creating-and-activating-a-route">Creating and Activating a Route</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#managing-routes-tracks-and-waypoints">Managing Routes, Tracks and Waypoints</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#course-up-mode">Course-up Mode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_basic#showing-ais-targets">Showing AIS Targets</a></li>
 </ul>
@@ -125,6 +124,10 @@ For example, Apparent Wind Speed, Location</p>
 <p>Data that needs to be derived from multiple data sources.
 Examples include True Wind Speed (from Apparent Wind Speed, Speed and Heading), Sunset Time (from Location, Date and a Database).</p>
 <blockquote>
+<div><p>GNSS</p>
+</div></blockquote>
+<p>Global Navigation Satellite System, examples include GPS and Galileo.</p>
+<blockquote>
 <div><p>Open Standard</p>
 </div></blockquote>
 <p>A specification that is published by a standards developing organisation and is available under fair, reasonable and non-discriminatory (FRAND) terms - this does not mean free.  This allows a number of organisations to make equipment that can interact with each other.
@@ -149,7 +152,7 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 </div></blockquote>
 <section id="tackticks">
 <h3>TackTicks<a class="headerlink" href="#tackticks" title="Link to this heading">¶</a></h3>
-<p>The TackTick instruments are used to generate depth, speed through the water, water temperature, apparent wind speed and direction.  The TackTick units use a proprietary radio network called <a class="reference external" href="https://open-boat-projects.org/en/micronet/">Raymarine Micronet</a> to pass information between the units installed in the navigation cupboard, the wind sensor and the display units.</p>
+<p>The TackTick instruments are used to generate depth, speed through the water, water temperature, apparent wind speed and apparent wind direction.  The TackTick units use a proprietary radio network called <a class="reference external" href="https://open-boat-projects.org/en/micronet/">Raymarine Micronet</a> to pass information between the units installed in the navigation cupboard, the wind sensor and the display units.</p>
 <section id="display-units">
 <h4>Display Units<a class="headerlink" href="#display-units" title="Link to this heading">¶</a></h4>
 <p><img alt="Instruments" src="_images/ticktack.jpg"/></p>
@@ -175,7 +178,7 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 <section id="wind-speed-and-direction">
 <h4>Wind Speed and Direction<a class="headerlink" href="#wind-speed-and-direction" title="Link to this heading">¶</a></h4>
 <p><img alt="Micronet" src="_images/Micronet-768x464.png"/></p>
-<p>The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called .</p>
+<p>The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called MicroNet.</p>
 </section>
 </section>
 <section id="emtrak-ais">
@@ -311,6 +314,10 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 <p>The sunset notification lets us know that the navigation system is running at sunset, so we know that a night sail is taking place.</p>
 </section>
 </section>
+<section id="shutdown-information">
+<h4>Shutdown Information<a class="headerlink" href="#shutdown-information" title="Link to this heading">¶</a></h4>
+<p>The offsite notifier to send a set of data when the navigation system is shutdown.  This would be used for information important to planning maintenance and spotting early indications of issues.  In the initial rollout we’re hoping to send engine hours, battery status and cabin humidity with a hope to add further information such as fridge minimum temperature, engine maximum temperature, bilge water level etc.</p>
+</section>
 </section>
 <section id="future-projects">
 <h3>Future Projects<a class="headerlink" href="#future-projects" title="Link to this heading">¶</a></h3>
@@ -322,10 +329,6 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 <li><p>Make a small, basic repeater that can be installed near the Raspberry Pi monitor showing only the most important data.</p></li>
 </ul>
 </section>
-<section id="shutdown-information">
-<h4>Shutdown Information<a class="headerlink" href="#shutdown-information" title="Link to this heading">¶</a></h4>
-<p>We are planning to use the offsite notifier to send a set of data when the navigation system is shutdown.  This would be used for information important to planning maintenance and spotting early indications of issues.  In the initial rollout we’re hoping to send engine hours, battery status and cabin humidity with a hope to add further information such as fridge minimum temperature, engine maximum temperature, bilge water level etc.</p>
-</section>
 <section id="better-engine-information">
 <h4>Better Engine Information<a class="headerlink" href="#better-engine-information" title="Link to this heading">¶</a></h4>
 <p>There is an open source project based on OpenPlotter to interface to a Volvo Penta engine and send data such as RPM, temperature, etc. to the navigation network.</p>
@@ -336,11 +339,6 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 <blockquote>
 <div><p>To quote the Commodore’s near namesake, William Thomson, Baron Kelvin: <em>“When you can measure what you are speaking about, and express it in numbers, you know something about it; but when you cannot measure it, when you cannot express it in numbers, your knowledge is of a meagre and unsatisfactory kind.”</em></p>
 </div></blockquote>
-</section>
-<section id="simplify-system-wifi-for-crew">
-<h4>Simplify system WiFi for crew<a class="headerlink" href="#simplify-system-wifi-for-crew" title="Link to this heading">¶</a></h4>
-<p>At present, both the EmTrak AIS and the boat’s internet router have wireless access points - so there are 2 Ariel networks.</p>
-<p>The optimal is to use only the boat router - this gives crew handheld device software such as Navionics access to data such as depth, wind speed and to safety alarms such as local MOB transmissions.</p>
 </section>
 </section>
 </section>
@@ -383,57 +381,61 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 </section>
 <section id="zooming-and-panning">
 <h3>Zooming and Panning<a class="headerlink" href="#zooming-and-panning" title="Link to this heading">¶</a></h3>
-<p>Move to edge of chart, mouse pointer turns in to green triangle</p>
-<p>Mouse wheel or + or - in bottom right</p>
+<p>There are two different ways to pan the chart that is being displayed.  The first, move the mouse pointer to edge of chart,  the mouse pointer will turn in to green triangle.  Once the green triangle is shown, click the left mouse button and the chart will move.  Secondly, the chart can be dragged using the mouse.  Click and hold the left mouse button and then move the mouse, the chart will move with the mouse.</p>
+<p>To zoom the chart in or out, there are two alternatives too.  The user can use the mouse wheel to zoom in or out, or they can use the icons + or - on the control panel at the bottom right of the screen.</p>
 </section>
 <section id="getting-information-on-chart-item">
 <h3>Getting Information on Chart Item<a class="headerlink" href="#getting-information-on-chart-item" title="Link to this heading">¶</a></h3>
-<p>Right Click on Item</p>
+<p>One of the key items that more modern chart plotters offer is a large quantity of data about items on the screen.  You can get flash patterns, descriptions of the structure of a light, warnings etc.</p>
+<p>To view the information, right click the mouse on the specific item.</p>
 <p><img alt="Selection that appears after right clicking on chart item" src="_images/Object-query1.png"/></p>
-<p>Select Object query.</p>
+<p>From the pop up menu, select Object Query.</p>
 <p><img alt="Object Query Data Box" src="_images/ObjectQuery2.png"/></p>
 </section>
 <section id="measuring-distance-on-chart">
 <h3>Measuring Distance on Chart<a class="headerlink" href="#measuring-distance-on-chart" title="Link to this heading">¶</a></h3>
-<p>Right Click and select measure (or press letter M on keyboard.)</p>
-<p>Click at first point.  move mouse to second point and read distance and direction</p>
+<p>Distance and direction can be measured between any two points on the chart.  To start a measurement, right click with the mouse and select measure (or press letter M on keyboard).</p>
+<p>Left click with the mouse at first point, then move the mouse to the second point and read off the distance and direction.  The screen will auto-pan if you’re move the mouse to the edge of the chart whilst measuring.</p>
 <p><img alt="Measuring a distance and direction on a char" src="_images/Measure.png"/></p>
 </section>
-<section id="adding-waypoints">
-<h3>Adding Waypoints<a class="headerlink" href="#adding-waypoints" title="Link to this heading">¶</a></h3>
+<section id="adding-waypoints-marks">
+<h3>Adding Waypoints/Marks<a class="headerlink" href="#adding-waypoints-marks" title="Link to this heading">¶</a></h3>
+<p>There are two methods to add waypoints in OpenCPN.  To navigate to a waypoint <em>CHECK</em></p>
 <section id="import-a-file">
 <h4>Import a file<a class="headerlink" href="#import-a-file" title="Link to this heading">¶</a></h4>
-<p>mark manager</p>
+<p>The first method uses a standard file format called GPX which can store waypoints, routes or tracks.  These can be exported from most GPS related software so you can plan at home and import to OpenCPN.</p>
+<p>Open the Mark Manager from the control panel on the left hand side of the plotter screen.  Click on the Marks tab, and at the bottom of the manager box click Import GPX.  Alternatively, marks can be imported as a layer, which can be turned on and off en masse.  Currently, we have layers for the Solent Racing Marks and Dartmouth regatta marks.</p>
 <p><img alt="Importing a GPX File" src="_images/import-gpx.png"/>
 <img alt="Importing a GPX File" src="_images/import-gpx2.png"/></p>
 </section>
 <section id="via-chart">
 <h4>Via chart<a class="headerlink" href="#via-chart" title="Link to this heading">¶</a></h4>
-<p>Right Click Drop Mark</p>
-<p>To name, go to mark manager, hightlight, properties.</p>
+<p>When adding marks via the chart, right click the mouse at the point where you want to add a waypoint and click Drop Mark.</p>
+<p>To name the waypoint or to change the icon, go to mark manager, navigate to the marks tab and click on the relevant waypoint. Click Properties on the right hand of the panel and change the name, location or icon.  Remember to press Save.</p>
+<p><em>Any waypoints which are not named will be deleted on a monthly basis.</em></p>
 </section>
 </section>
 <section id="creating-and-activating-a-route">
 <h3>Creating and Activating a Route<a class="headerlink" href="#creating-and-activating-a-route" title="Link to this heading">¶</a></h3>
-<p>Richt Click - New route</p>
+<p>Similar to waypoints, routes can be imported from a GPX file that has been created in advance.</p>
+<p>To create a route, start by right clicking the mouse on the chart and select New route.</p>
 <p><img alt="Creating a new route" src="_images/create-route.png"/></p>
+<p>Click at each point on the route.  To finish making the route <em>CHECK</em></p>
 <p><img alt="Creating a new route" src="_images/create_route2.png"/></p>
 <p><img alt="Creating a new route" src="_images/create-route3.png"/></p>
-<p>click at each point on route</p>
-<p>Either, Right click on route and click activate, or open route manager, name route by clicking on properties and click activate</p>
-<p>unnamed routes will be deleted.</p>
-</section>
-<section id="managing-routes-tracks-and-waypoints">
-<h3>Managing Routes, Tracks and Waypoints<a class="headerlink" href="#managing-routes-tracks-and-waypoints" title="Link to this heading">¶</a></h3>
+<p>To start using the route, either right click the mouse on the route and click Activate, or open route manager, navigate to the routes tab and click activate.  The route can also be named by clicking on Properties in the route manager.</p>
+<p><em>Any routes which are not named will be deleted on a monthly basis.</em></p>
 </section>
 <section id="course-up-mode">
 <h3>Course-up Mode<a class="headerlink" href="#course-up-mode" title="Link to this heading">¶</a></h3>
+<p>Chart up mode can be enabled by clicking on the Arrow next to the satellite signal level indicator on the control bar at the top right of the display or via the chart control pop-up that is accessed by clicking the three horizontal bars at the bottom left of the display.</p>
+<p><em>This does slow the chart rendering and is not recommended.</em></p>
 <p><img alt="Open CPN Overview" src="_images/course-up.png"/></p>
 </section>
 <section id="showing-ais-targets">
 <h3>Showing AIS Targets<a class="headerlink" href="#showing-ais-targets" title="Link to this heading">¶</a></h3>
-<p>Switch on and off using the bottom right</p>
-<p>Right click on vessel icon AIS Target Query</p>
+<p>AIS targets can be switched on and off using chart inoformation control pop-up that is accessed by clicking the three horizontal bars at the bottom left of the display.  Please ensure that this is left on for the next skipper and crew.</p>
+<p>To view more details about an AIS target, such as size, speed, destination, you can right click the mouse on the vessel icon and then click AIS Target Query.</p>
 <p><img alt="AIS Target Query data box" src="_images/AIS_query.png"/></p>
 <p>NB there are two classes of AIS user, class A and class B.  Class B are smaller craft, like Ariel, and do not transmit the same level of detail as a class A user.</p>
 </section>
@@ -510,13 +512,13 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 </section>
 <section id="kip-dashboard">
 <h3>KIP Dashboard<a class="headerlink" href="#kip-dashboard" title="Link to this heading">¶</a></h3>
-<section id="initial-page">
-<h4>Initial Page<a class="headerlink" href="#initial-page" title="Link to this heading">¶</a></h4>
+<p>The KIP dashboard runs on a web browser.  The browser should open automatically, if it doesn’t, the blue globe logo on the top bar next to the Raspberry Pi logo will start the software.  Navigate to <em>IP address</em>.</p>
+<p>The initial page is useful for sailing, showing wind, speed, course etc.</p>
 <p><img alt="Initial KIP Page" src="_images/KIP-dashboard1.png"/></p>
+<p>Further pages are available.  To change between pages, use  the keyboard clicking Ctrl and Up arrow or Ctrl and Down arrow to change page.</p>
 <p><img alt="Second KIP Page" src="_images/KIP-dashboard2.png"/></p>
 <p><img alt="Third KIP Page" src="_images/KIP-Dashboard3.png"/></p>
-<p>Ctrl + up or Ctrl + Down to change page</p>
-</section>
+<p>Further information will be added to the screens as it becomes available.</p>
 </section>
 </section>
 <span id="document-pages/data_dashboard"></span><section id="data-dashboard">
@@ -591,19 +593,23 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>0.4</p></td>
+<tr class="row-even"><td><p>0.5</p></td>
+<td><p><em>Basic usage</em> Added description of basic use of the system</p></td>
+<td><p>22/02/26</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.4</p></td>
 <td><p><em>Booting and Shutting Down</em> Added data on how to safely boot and shutdown the system</p></td>
 <td><p>22/01/26</p></td>
 </tr>
-<tr class="row-odd"><td><p>0.3</p></td>
+<tr class="row-even"><td><p>0.3</p></td>
 <td><p><em>Technical Overview</em> Added an overview of the navigation hardware, sensors and software used on Ariel of Hamble</p></td>
 <td><p>22/01/26</p></td>
 </tr>
-<tr class="row-even"><td><p>0.2</p></td>
+<tr class="row-odd"><td><p>0.2</p></td>
 <td><p><em>Automated PDF creation</em> Set up creation of PDF using Sphinx SimplePDF</p></td>
 <td><p>21/01/26</p></td>
 </tr>
-<tr class="row-odd"><td><p>0.1</p></td>
+<tr class="row-even"><td><p>0.1</p></td>
 <td><p><em>Automated webpage creation</em> Set up publishing to GitHub pages using Sphinx to convert from Markdown to HTML</p></td>
 <td><p>21/01/26</p></td>
 </tr>
