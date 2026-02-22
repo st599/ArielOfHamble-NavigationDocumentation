@@ -36,6 +36,10 @@ The speed transducer uses a paddle wheel to measure the speed of the boat throug
 
 The Wind Speed and Direction unit at the top of the mast is solar powered.  It transmits the information to the unit in the Navigation locker using a proprietary format called MicroNet.  
 
+### Interior Temperature, Pressure and Humidity
+
+A small PCB in the navigaation cupboard provides Temperature, Pressure and Humidity data to the Rapsberry Pi via a short IIC connection.
+
 ## EmTrak AIS
 
 ![EmTrak B900](../assets/images/B900.jpg)
