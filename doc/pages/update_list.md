@@ -14,3 +14,5 @@
 
 | Chart | description | date |
 | ----------- | ----------- | ----------- |
+| UK & Eire | Updated to 2026 charts | 28/02/26
+| France Atlantic | Updated to 2026 charts | 28/02/26

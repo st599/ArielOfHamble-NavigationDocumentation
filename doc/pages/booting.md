@@ -9,4 +9,3 @@ The navigation system needs to be turned on in a particular order.
 3. Power on the Navigation switch.  The Raspberry Pi will boot and the  OpenCPN chartplotter software will load.  The satellite position indicator on OpenCPN should show 3-4 bars.
 
 4. The navigation instruments need to be switched on near the navigation cupboard.  Switching on one will send a signal to the other units and they will switch on too.  Once a connection to the RayNet network occurs, information will start to be displayed.  The units can now be moved outside.
-
