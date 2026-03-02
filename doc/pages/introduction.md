@@ -5,6 +5,8 @@ This document contains details on how the Navigation System on Ariel of Hamble w
 
 As more feedback is gathered and as more tools are added to the system, we'll add more details and update the version numbers.  The most up-to-date version will be available on the website, but the software does also create a PDF version that will be available to download.  We'll also include dates of chart updates.
 
+The website will always be the most uo-to-date version available.  The PDF will be advertised on the Skippers' and Mates' list when a major update is available.
+
 The web version of the document can be [found here](https://st599.github.io/ArielOfHamble-NavigationDocumentation/index.html).
 
 The PDF version can be [downloaded here](https://github.com/st599/ArielOfHamble-NavigationDocumentation/tree/main/doc/pdf_build/simplepdf).
