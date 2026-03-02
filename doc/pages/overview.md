@@ -84,7 +84,7 @@ The Standard Horizon can also send the location of emergency alerts received to 
 
 ## RaspberryPi
 
-*Insert Image*
+![Raspberry Pi in cage](../assets/images/ras-pi.jpg)
 
 The RaspberryPi is the heart of the Navigation System.  It is a small, but fully functional, computer system that runs a free specialist operating system called OpenPlotter.  Originally designed for school students to be able to own a small, cheap computer - they're now used in many industrial settings.
 
