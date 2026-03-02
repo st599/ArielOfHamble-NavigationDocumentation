@@ -78,13 +78,13 @@ The EmTrak also sends:
 
 The Standard Horizon VHF uses the GPS signal from the EmTrack AIS unit. The location and time are shown on the front panel LCD of the VHF unit - these are required to make the DSC emergency calling system work. 
 
-(The VHF has an in-built VHF too, this is switched off as having multiple GPS locations being added to the network was one of the causes of issues seen in the first season)
+(The VHF has an in-built GPS too, this is switched off as having multiple GPS locations being added to the network was one of the causes of issues seen in the first season)
 
 The Standard Horizon can also send the location of emergency alerts received to the network so they can be viewed on the OpenCPN chart plotting software.
 
 ## RaspberryPi
 
-![Raspberry Pi in cage](../assets/images/ras-pi.jpg)
+
 
 The RaspberryPi is the heart of the Navigation System.  It is a small, but fully functional, computer system that runs a free specialist operating system called OpenPlotter.  Originally designed for school students to be able to own a small, cheap computer - they're now used in many industrial settings.
 
@@ -141,7 +141,7 @@ Further details on OpenCPN can be found at [OpenCPN Website](https://www.opencpn
 
 #### O-Charts
 
-![O-Charts UK Overview](../assets/images/ocharts-uk.jpg)
+![O Charts UK Overview](../assets/images/ocharts-uk.jpg)
 
 [O-charts](https://www.o-charts.org/) use the latest information from a number of European hydrographic offices to create chart packages specifically designed for OpenCPN.  Each purchase is licensed to a USB key that is plugged in to the Raspberry Pi. 
 
@@ -209,10 +209,8 @@ At present the dashboard is only available on the Raspberry Pi at the chart tabl
 
 There is an open source project based on OpenPlotter to interface to a Volvo Penta engine and send data such as RPM, temperature, etc. to the navigation network.
 
-### Integrate VHF Safety Messages in to plotter
+### Better Battery Information
 
-Emergency DSC messages received by the VHF should be displayed on the plotter.  This will allow the crew to quickly check the location of a distress call.  It will also allow crew DSC emergency beacons to be plotted on the chart (for those that wear them).
-
-
+There have been some reports of batteries misbehaving, so we're planning on adding battery monitors to both the Engine and House battery banks that will allow us to measure the battery voltage, provide this to the navigation network and graphically interpret the data so we can see if what correlation there is between voltage drop and equipment usage onboard.
 
 > To quote the Commodore's near namesake, William Thomson, Baron Kelvin: *"When you can measure what you are speaking about, and express it in numbers, you know something about it; but when you cannot measure it, when you cannot express it in numbers, your knowledge is of a meagre and unsatisfactory kind."*
