@@ -1,6 +1,6 @@
 # Update List
 
->Note on version numbers <year>.<major_version>.<minor-version>
+>Note on version numbers year.major_version.minor-version
 
 >Major version will be updated when there is new functionality
 
