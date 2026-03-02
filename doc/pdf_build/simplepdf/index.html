@@ -49,6 +49,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/introduction#terms-and-definitions">Terms and Definitions</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#document-pages/update_list">Update List</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#document-pages/update_list#major-chart-updates">Major Chart Updates</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/overview">Navigation Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#tackticks">TackTicks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/overview#emtrak-ais">EmTrak AIS</a></li>
@@ -73,7 +77,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/opencpn_advanced">Advanced Use of OpenCPN</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_advanced#accessing-tidal-data">Accessing Tidal Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_advanced#ais-radar-plots">AIS Radar Plots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_advanced#updating-charts">Updating Charts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#document-pages/opencpn_advanced#connecting-to-navigation-data-via-wifi">Connecting to Navigation Data via WiFi</a></li>
@@ -89,10 +92,6 @@
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/shutdown">Shutting Down the Navigation System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/troubleshooting">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#document-pages/reporting_fault">Reporting a Fault</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#document-pages/update_list">Update List</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#document-pages/update_list#major-chart-updates">Major Chart Updates</a></li>
-</ul>
-</li>
 </ul>
 </div>
 </div>
@@ -150,6 +149,53 @@ Examples include SeaTalk, Micronet</p>
 </div></blockquote>
 <p>Usually used for software to mean that it is available under a licence such as the GNU General Public Licence, which allow you to use, build upon, distribute, sell etc. provided you allow others to do the same.
 Examples include the OpenCPN Plotter and SignalK data format and software.</p>
+</section>
+</section>
+<span id="document-pages/update_list"></span><section id="update-list">
+<h2>Update List<a class="headerlink" href="#update-list" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><p>Note on version numbers <year>.&lt;major_version&gt;.<minor-version></minor-version></year></p>
+</div></blockquote>
+<blockquote>
+<div><p>Major version will be updated when there is new functionality</p>
+</div></blockquote>
+<blockquote>
+<div><p>Minor version will be updated  when charts are updated, minor text changes etc.</p>
+</div></blockquote>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>version</p></th>
+<th class="head"><p>description</p></th>
+<th class="head"><p>date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>26.0.8</p></td>
+<td><p>Version ready to send to Volunteers to check text</p></td>
+<td><p>02/03/2026</p></td>
+</tr>
+</tbody>
+</table>
+<section id="major-chart-updates">
+<h3>Major Chart Updates<a class="headerlink" href="#major-chart-updates" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Chart</p></th>
+<th class="head"><p>description</p></th>
+<th class="head"><p>date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>UK &amp; Eire</p></td>
+<td><p>Updated to 2026 charts</p></td>
+<td><p>28/02/26</p></td>
+</tr>
+<tr class="row-odd"><td><p>France Atlantic</p></td>
+<td><p>Updated to 2026 charts</p></td>
+<td><p>28/02/26</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 <span id="document-pages/overview"></span><section id="navigation-overview">
@@ -219,7 +265,7 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 <p>The EmTrak also sends:</p>
 <ul class="simple">
 <li><p>Class A Vessel Location</p></li>
-<li><p>Class B Vessel Location</p></li>
+<li><p>Class B/B+ Vessel Location</p></li>
 <li><p>Class A Vessel Type, Cargo, Destinations etc.</p></li>
 <li><p>Search and Rescue Aircraft</p></li>
 <li><p>Aids to Navigation (“Virtual Buoys”)</p></li>
@@ -232,11 +278,11 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 <p><img alt="SH-VHF" src="_images/gx1800e.jpg"/></p>
 <p>The Standard Horizon VHF uses the GPS signal from the EmTrack AIS unit. The location and time are shown on the front panel LCD of the VHF unit - these are required to make the DSC emergency calling system work.</p>
 <p>(The VHF has an in-built VHF too, this is switched off as having multiple GPS locations being added to the network was one of the causes of issues seen in the first season)</p>
-<p>The Standard Horizon also sends the location of emergency alerts received to the network so they can be viewed on the OpenCPN chart plotting software.</p>
+<p>The Standard Horizon can also send the location of emergency alerts received to the network so they can be viewed on the OpenCPN chart plotting software.</p>
 </section>
 <section id="raspberrypi">
 <h3>RaspberryPi<a class="headerlink" href="#raspberrypi" title="Link to this heading">¶</a></h3>
-<p><em>Insert Image</em></p>
+<p><img alt="Raspberry Pi in cage" src="_images/ras-pi.jpg"/></p>
 <p>The RaspberryPi is the heart of the Navigation System.  It is a small, but fully functional, computer system that runs a free specialist operating system called OpenPlotter.  Originally designed for school students to be able to own a small, cheap computer - they’re now used in many industrial settings.</p>
 <p>In adition to the main computer board, we have added two other specialist boards to the system (known as HATs).</p>
 <ul class="simple">
@@ -280,7 +326,7 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 </div></blockquote>
 <section id="o-charts">
 <h5>O-Charts<a class="headerlink" href="#o-charts" title="Link to this heading">¶</a></h5>
-<p><img alt="O Charts UK Overview" src="_images/ocharts-uk.jpg"/></p>
+<p><img alt="O-Charts UK Overview" src="_images/ocharts-uk.jpg"/></p>
 <p><a class="reference external" href="https://www.o-charts.org/">O-charts</a> use the latest information from a number of European hydrographic offices to create chart packages specifically designed for OpenCPN.  Each purchase is licensed to a USB key that is plugged in to the Raspberry Pi.</p>
 <p>The visual design of the charts is fully cusomisable - we have made it look like an Admiralty chart on Ariel - please note that you may need to zoom in on the chart to see all of the information present.</p>
 <blockquote>
@@ -345,9 +391,9 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 <h4>Better Engine Information<a class="headerlink" href="#better-engine-information" title="Link to this heading">¶</a></h4>
 <p>There is an open source project based on OpenPlotter to interface to a Volvo Penta engine and send data such as RPM, temperature, etc. to the navigation network.</p>
 </section>
-<section id="better-battery-information">
-<h4>Better Battery Information<a class="headerlink" href="#better-battery-information" title="Link to this heading">¶</a></h4>
-<p>There have been some reports of batteries misbehaving, so we’re planning on adding battery monitors to both the Engine and House battery banks that will allow us to measure the battery voltage, provide this to the navigation network and graphically interpret the data so we can see if what correlation there is between voltage drop and equipment usage onboard.</p>
+<section id="integrate-vhf-safety-messages-in-to-plotter">
+<h4>Integrate VHF Safety Messages in to plotter<a class="headerlink" href="#integrate-vhf-safety-messages-in-to-plotter" title="Link to this heading">¶</a></h4>
+<p>Emergency DSC messages received by the VHF should be displayed on the plotter.  This will allow the crew to quickly check the location of a distress call.  It will also allow crew DSC emergency beacons to be plotted on the chart (for those that wear them).</p>
 <blockquote>
 <div><p>To quote the Commodore’s near namesake, William Thomson, Baron Kelvin: <em>“When you can measure what you are speaking about, and express it in numbers, you know something about it; but when you cannot measure it, when you cannot express it in numbers, your knowledge is of a meagre and unsatisfactory kind.”</em></p>
 </div></blockquote>
@@ -454,10 +500,6 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 </section>
 <span id="document-pages/opencpn_advanced"></span><section id="advanced-use-of-opencpn">
 <h2>Advanced Use of OpenCPN<a class="headerlink" href="#advanced-use-of-opencpn" title="Link to this heading">¶</a></h2>
-<section id="accessing-tidal-data">
-<h3>Accessing Tidal Data<a class="headerlink" href="#accessing-tidal-data" title="Link to this heading">¶</a></h3>
-<p><em>Tidal Data</em></p>
-</section>
 <section id="ais-radar-plots">
 <h3>AIS Radar Plots<a class="headerlink" href="#ais-radar-plots" title="Link to this heading">¶</a></h3>
 <p>The AIS can be displayed on a RADAR-like overlay.  This is available from the main control panel on the left hand side of the display.</p>
@@ -589,44 +631,6 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 </ul>
 <p>The Commodore and Boatswain have remote access to the system, so they may ask you to leave it switched on when you’re doing something else.</p>
 <p>test</p>
-</section>
-<span id="document-pages/update_list"></span><section id="update-list">
-<h2>Update List<a class="headerlink" href="#update-list" title="Link to this heading">¶</a></h2>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>version</p></th>
-<th class="head"><p>description</p></th>
-<th class="head"><p>date</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>0.8</p></td>
-<td><p>Version ready to send to Volunteers to check text</p></td>
-<td><p>28/02/2026</p></td>
-</tr>
-</tbody>
-</table>
-<section id="major-chart-updates">
-<h3>Major Chart Updates<a class="headerlink" href="#major-chart-updates" title="Link to this heading">¶</a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Chart</p></th>
-<th class="head"><p>description</p></th>
-<th class="head"><p>date</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>UK &amp; Eire</p></td>
-<td><p>Updated to 2026 charts</p></td>
-<td><p>28/02/26</p></td>
-</tr>
-<tr class="row-odd"><td><p>France Atlantic</p></td>
-<td><p>Updated to 2026 charts</p></td>
-<td><p>28/02/26</p></td>
-</tr>
-</tbody>
-</table>
-</section>
 </section>
 </div>
 </section>
