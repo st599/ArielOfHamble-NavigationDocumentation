@@ -13,6 +13,7 @@ Please note - IP addresses and passwords are not present in this document as it 
    :caption: Contents:
 
    pages/introduction.md
+   pages/update_list.md
    pages/overview.md
    pages/booting.md
    pages/opencpn_basic.md
@@ -21,4 +22,4 @@ Please note - IP addresses and passwords are not present in this document as it 
    pages/shutdown.md
    pages/troubleshooting.md
    pages/reporting_fault.md
-   pages/update_list.md
+

@@ -66,7 +66,7 @@ The EmTrak sends the following GNSS information to the Navigation system:
 
 The EmTrak also sends:
 * Class A Vessel Location
-* Class B Vessel Location
+* Class B/B+ Vessel Location
 * Class A Vessel Type, Cargo, Destinations etc.
 * Search and Rescue Aircraft
 * Aids to Navigation ("Virtual Buoys")
@@ -80,7 +80,7 @@ The Standard Horizon VHF uses the GPS signal from the EmTrack AIS unit. The loca
 
 (The VHF has an in-built VHF too, this is switched off as having multiple GPS locations being added to the network was one of the causes of issues seen in the first season)
 
-The Standard Horizon also sends the location of emergency alerts received to the network so they can be viewed on the OpenCPN chart plotting software.
+The Standard Horizon can also send the location of emergency alerts received to the network so they can be viewed on the OpenCPN chart plotting software.
 
 ## RaspberryPi
 
