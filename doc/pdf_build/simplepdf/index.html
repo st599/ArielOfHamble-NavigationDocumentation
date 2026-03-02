@@ -276,12 +276,11 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 <h3>Standard Horizon VHF<a class="headerlink" href="#standard-horizon-vhf" title="Link to this heading">¶</a></h3>
 <p><img alt="SH-VHF" src="_images/gx1800e.jpg"/></p>
 <p>The Standard Horizon VHF uses the GPS signal from the EmTrack AIS unit. The location and time are shown on the front panel LCD of the VHF unit - these are required to make the DSC emergency calling system work.</p>
-<p>(The VHF has an in-built VHF too, this is switched off as having multiple GPS locations being added to the network was one of the causes of issues seen in the first season)</p>
+<p>(The VHF has an in-built GPS too, this is switched off as having multiple GPS locations being added to the network was one of the causes of issues seen in the first season)</p>
 <p>The Standard Horizon can also send the location of emergency alerts received to the network so they can be viewed on the OpenCPN chart plotting software.</p>
 </section>
 <section id="raspberrypi">
 <h3>RaspberryPi<a class="headerlink" href="#raspberrypi" title="Link to this heading">¶</a></h3>
-<p><img alt="Raspberry Pi in cage" src="_images/ras-pi.jpg"/></p>
 <p>The RaspberryPi is the heart of the Navigation System.  It is a small, but fully functional, computer system that runs a free specialist operating system called OpenPlotter.  Originally designed for school students to be able to own a small, cheap computer - they’re now used in many industrial settings.</p>
 <p>In adition to the main computer board, we have added two other specialist boards to the system (known as HATs).</p>
 <ul class="simple">
@@ -325,7 +324,7 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 </div></blockquote>
 <section id="o-charts">
 <h5>O-Charts<a class="headerlink" href="#o-charts" title="Link to this heading">¶</a></h5>
-<p><img alt="O-Charts UK Overview" src="_images/ocharts-uk.jpg"/></p>
+<p><img alt="O Charts UK Overview" src="_images/ocharts-uk.jpg"/></p>
 <p><a class="reference external" href="https://www.o-charts.org/">O-charts</a> use the latest information from a number of European hydrographic offices to create chart packages specifically designed for OpenCPN.  Each purchase is licensed to a USB key that is plugged in to the Raspberry Pi.</p>
 <p>The visual design of the charts is fully cusomisable - we have made it look like an Admiralty chart on Ariel - please note that you may need to zoom in on the chart to see all of the information present.</p>
 <blockquote>
@@ -390,9 +389,9 @@ Examples include the OpenCPN Plotter and SignalK data format and software.</p>
 <h4>Better Engine Information<a class="headerlink" href="#better-engine-information" title="Link to this heading">¶</a></h4>
 <p>There is an open source project based on OpenPlotter to interface to a Volvo Penta engine and send data such as RPM, temperature, etc. to the navigation network.</p>
 </section>
-<section id="integrate-vhf-safety-messages-in-to-plotter">
-<h4>Integrate VHF Safety Messages in to plotter<a class="headerlink" href="#integrate-vhf-safety-messages-in-to-plotter" title="Link to this heading">¶</a></h4>
-<p>Emergency DSC messages received by the VHF should be displayed on the plotter.  This will allow the crew to quickly check the location of a distress call.  It will also allow crew DSC emergency beacons to be plotted on the chart (for those that wear them).</p>
+<section id="better-battery-information">
+<h4>Better Battery Information<a class="headerlink" href="#better-battery-information" title="Link to this heading">¶</a></h4>
+<p>There have been some reports of batteries misbehaving, so we’re planning on adding battery monitors to both the Engine and House battery banks that will allow us to measure the battery voltage, provide this to the navigation network and graphically interpret the data so we can see if what correlation there is between voltage drop and equipment usage onboard.</p>
 <blockquote>
 <div><p>To quote the Commodore’s near namesake, William Thomson, Baron Kelvin: <em>“When you can measure what you are speaking about, and express it in numbers, you know something about it; but when you cannot measure it, when you cannot express it in numbers, your knowledge is of a meagre and unsatisfactory kind.”</em></p>
 </div></blockquote>
