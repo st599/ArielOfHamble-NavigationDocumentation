@@ -6,7 +6,6 @@
 Ariel of Hamble Navigation Documentation
 ========================================
 
-Please note - IP addresses and passwords are not present in this document as it is available on the public Internet.
 
 .. toctree::
    :maxdepth: 2
