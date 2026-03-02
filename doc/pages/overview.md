@@ -141,7 +141,7 @@ Further details on OpenCPN can be found at [OpenCPN Website](https://www.opencpn
 
 #### O-Charts
 
-![O Charts UK Overview](../assets/images/ocharts-uk.jpg)
+![O-Charts UK Overview](../assets/images/ocharts-uk.jpg)
 
 [O-charts](https://www.o-charts.org/) use the latest information from a number of European hydrographic offices to create chart packages specifically designed for OpenCPN.  Each purchase is licensed to a USB key that is plugged in to the Raspberry Pi. 
 
@@ -209,8 +209,10 @@ At present the dashboard is only available on the Raspberry Pi at the chart tabl
 
 There is an open source project based on OpenPlotter to interface to a Volvo Penta engine and send data such as RPM, temperature, etc. to the navigation network.
 
-### Better Battery Information
+### Integrate VHF Safety Messages in to plotter
 
-There have been some reports of batteries misbehaving, so we're planning on adding battery monitors to both the Engine and House battery banks that will allow us to measure the battery voltage, provide this to the navigation network and graphically interpret the data so we can see if what correlation there is between voltage drop and equipment usage onboard.
+Emergency DSC messages received by the VHF should be displayed on the plotter.  This will allow the crew to quickly check the location of a distress call.  It will also allow crew DSC emergency beacons to be plotted on the chart (for those that wear them).
+
+
 
 > To quote the Commodore's near namesake, William Thomson, Baron Kelvin: *"When you can measure what you are speaking about, and express it in numbers, you know something about it; but when you cannot measure it, when you cannot express it in numbers, your knowledge is of a meagre and unsatisfactory kind."*
