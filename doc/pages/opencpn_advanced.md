@@ -1,9 +1,5 @@
 # Advanced Use of OpenCPN
 
-## Accessing Tidal Data
-
-*Tidal Data*
-
 ## AIS Radar Plots
 
 The AIS can be displayed on a RADAR-like overlay.  This is available from the main control panel on the left hand side of the display.
