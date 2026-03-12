@@ -108,7 +108,7 @@ Further details on OpenPlotter can be found at the [OpenPlotter Website](https:/
 
 ### SignalK
 
-SignalK is software designed to import data from a variety of sources around the boat and store it in a central database which can be accessed by other software.  On Ariel, the SignalK servier takes data from a range of inputs such as the NMEA 0143 bus used by the TackTicks and EmTrak, from the barometer and thermometer in the navigation locker and software modules running on the Raspberry Pi and imports them in to the database.  SignalK also stores a range of static data in this database which can be used in calculations, e.g. vessel draught.
+SignalK is software designed to import data from a variety of sources around the boat and store it in a central database which can be accessed by other software.  On Ariel, the SignalK servier takes data from a range of inputs such as the NMEA 0183 bus used by the TackTicks and EmTrak, from the barometer and thermometer in the navigation locker and software modules running on the Raspberry Pi and imports them in to the database.  SignalK also stores a range of static data in this database which can be used in calculations, e.g. vessel draught.
 
 SignalK stores data addresses and values, for example:
 
@@ -116,7 +116,7 @@ SignalK stores data addresses and values, for example:
 
 `/vessels/<mmsi>/navigation/position 51.23453,-0.12248,2.34`
 
-This database is available to other software to read from - the plotter software, OpenCPN, receives all of its locations details, AIS vessels to overlay, DSC alerts directly from the SignalK database.  SignalK also has a number of output plugins so the data is converted back to NMEA 0143 so derived values can be displayed on the TackTicks, to a data stream that can be used by Navionics or similar on member's phones and tablets and in some cases to files so that trends can be observed (e.g. we're actively monitoring battery state to see if we can understand better what is causing mysterious battery drainage).
+This database is available to other software to read from - the plotter software, OpenCPN, receives all of its locations details, AIS vessels to overlay, DSC alerts directly from the SignalK database.  SignalK also has a number of output plugins so the data is converted back to NMEA 0183 so derived values can be displayed on the TackTicks, to a data stream that can be used by Navionics or similar on member's phones and tablets and in some cases to files so that trends can be observed (e.g. we're actively monitoring battery state to see if we can understand better what is causing mysterious battery drainage).
 
 Further details on SignalK can be found at [SignalK Website](https://signalk.org/).
 
