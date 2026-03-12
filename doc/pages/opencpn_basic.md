@@ -70,7 +70,7 @@ Left click with the mouse at first point, then move the mouse to the second poin
 
 ## Adding Waypoints/Marks
 
-There are two methods to add waypoints in OpenCPN.  To navigate to a waypoint *CHECK*
+There are two methods to add waypoints in OpenCPN.
 
 ### Import a file
 
@@ -97,7 +97,7 @@ To create a route, start by right clicking the mouse on the chart and select New
 
 ![Creating a new route](../assets/images/create-route.png)
 
-Click at each point on the route.  To finish making the route *CHECK*
+Click at each point on the route.  To finish making the route, press escape or right click.
 
 ![Creating a new route](../assets/images/create_route2.png)
 
