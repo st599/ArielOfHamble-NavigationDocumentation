@@ -16,25 +16,27 @@ In the bottom right corner are the zoom controls of the chart, a button to pan t
 
 At the bottom left of the display, there are a number of green bars - these represent the charts that cover the area displayed.  The chart plotter blends data from a number of charts to best show required data.  This is known as "Chart-Quilting".  The charts used will change as you zoom in and out and as you pan or change the chart settings.  In this example 3 of the 6 charts are being used in the display.  *Please leave chart-quilting enabled - we have set the chart detail level to what we believe is a very useful compromise - readable on a 14" screen, showing all hazards and most depth soundings.*
 
-In the top left corner is the menu bar.  The top icon expands and contracts the menu.  
+In the top left corner is the menu bar.  Icon 1 expands and contracts the menu.  
 
-The second icon opens the Options menu.  *Please do not change anything in the options menu.* 
+![Open CPN Menu](../assets/images/menu.png)
 
-The third icon allows you to create a route.  
+Icon 2 opens the Options menu.  *Please do not change anything in the options menu.* 
 
-The fourth icon opens the routes, tracks and waypoints manager, allowing you to name routes, add organise waypoints, import routes and waypoints from file etc.
+Icon 3 allows you to create a route.  
 
-The fifth icon toggles track recording on and off.
+Icon 4 opens the routes, tracks and waypoints manager, allowing you to name routes, add organise waypoints, import routes and waypoints from file etc.
 
-The sixth icon toggles between daytime, dusk and nighttime colour schemes.
+Icon 5 toggles track recording on and off.
 
-The seventh icon opens the help dialogue.
+Icon 6 toggles between daytime, dusk and nighttime colour schemes.
 
-The eigth icon allows the user to download and view UK tidal data.
+Icon 7 opens the help dialogue.
 
-The ninth icon opens an AIS Radar so you can see AIS targets without the distraction of the chart items.
+Icon 8 allows the user to download and view UK tidal data.
 
-The final icon will drop a MOB waypoint.
+Icon 9 opens an AIS Radar so you can see AIS targets without the distraction of the chart items.
+
+Icon 10 will drop a MOB waypoint.
 
 ## Chart Display Options 
 
