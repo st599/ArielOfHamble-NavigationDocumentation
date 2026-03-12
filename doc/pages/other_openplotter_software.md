@@ -16,6 +16,8 @@ To change what the forecast pane is showing, use the Weather Map drop-down at th
 
 ## VLC
 
+*DO NOT STREAM INTERNET VIDEO WITH THIS SOFTWARE* - the Internet access is only for downloading charts and tidal data and reporting.
+
 VideoLAN VLC is a video viewer.  It can play just about any video file.  If you open the VLC viewer and click Media and then open, you'll get a file open dialogue and can choose a video to play.
 
 ![VideoLAN VLC](../assets/images/vlc.png)
