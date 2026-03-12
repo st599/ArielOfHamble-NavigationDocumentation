@@ -1,5 +1,7 @@
 # Other Useful OpenPlotter Software
 
+Other software is accessible by clicking on the RaspberryPi logo in the top-left corner, this will cause a drop-dpwn menu to open.
+
 ## XyGrib
 
 XyGrib is an open source software package designed to download and display weather forecast in a compressed format that doesn't require much data.
