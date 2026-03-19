@@ -8,7 +8,7 @@
 
 | version | description | date |
 | ----------- | ----------- | ----------- |
-| 26.0.8 | Version ready to send to Volunteers to check text | 02/03/2026 |  
+| 26.1.0 | Initial Release | 19/03/2026 |  
 
 
 ## Major Chart Updates
