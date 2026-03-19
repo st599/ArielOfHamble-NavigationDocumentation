@@ -12,7 +12,7 @@ _This should only be done with permission of the commodore or boatswain_  This a
 
 To update charts in the Open CPN plotter, click on the settings icon (a cog) in the left hand side dropdown.  This will open the following menu system.
 
-1. Within the Options box, clci the charts icon in the top row, then on the second row of options that appears, click "o-charts".
+1. Within the Options box, click the charts icon in the top row, then on the second row of options that appears, click "o-charts".
 
 2. This will open up the "o-charts" options.  Click "Refresh Charts List" and wait for the plotter to check the Internet server for any updates.
 
