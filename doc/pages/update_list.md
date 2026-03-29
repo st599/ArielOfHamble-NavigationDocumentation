@@ -18,3 +18,4 @@
 | UK & Eire | Updated to 2026 charts | 28/02/26 |
 | France Atlantic | Updated to 2026 charts | 28/02/26 |
 | France Atlantic | Chart update | 22/03/26 |
+| France Atlantic | Chart update | 29/03/26 |
