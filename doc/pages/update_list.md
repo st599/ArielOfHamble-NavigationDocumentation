@@ -22,3 +22,4 @@
 | France Atlantic and UK & Eire | Chart update | 15/05/26 |
 | France Atlantic | Chart update | 06/06/26 |
 | France Atlantic | Chart update | 26/06/26 |
+| France Atlantic and UK & Eire | Chart update | 21/07/26 |
