@@ -1,5 +1,5 @@
 const DOCUMENTATION_OPTIONS = {
-    VERSION: '26.1.5',
+    VERSION: '26.1.6',
     LANGUAGE: 'en',
     COLLAPSE_INDEX: false,
     BUILDER: 'simplepdf',
