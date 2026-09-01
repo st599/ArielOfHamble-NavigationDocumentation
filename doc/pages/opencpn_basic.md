@@ -4,6 +4,8 @@
 
 OpenCPN is an open source chartplotter maintained and improved by a large community of world-wide users.  It is freely available to download and we encourage club members to download and run it locally to allow them to practice how it is used and to allow them to plan routes, waypoints etc. in advance.
 
+The World Magnetic Model is used to calculate the magnetic offset for the location.  This is applied automatically to give magnetic courses, bearings etc.
+
 This is a graphic of the main interface:
 
 ![Open CPN Overview](../assets/images/overview.png)
