@@ -9,6 +9,7 @@
 | version | description | date |
 | ----------- | ----------- | ----------- |
 | 26.1.0 | Initial Release | 19/03/2026 |  
+| 26.2.0 | Added World Magnetic Model to generate correct magnetic heading | 19/08/2026 |  
 
 
 ## Major Chart Updates
